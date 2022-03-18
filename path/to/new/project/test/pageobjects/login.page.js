@@ -10,15 +10,15 @@ class LoginPage extends Page {
      * define selectors using getter methods
      */
     get inputUsername() {
-        return $('#username');
+        return $("//input[@id='txtUsername']");
     }
 
     get inputPassword() {
-        return $('#password');
+        return $("//input[@id='txtPassword']");
     }
 
     get btnSubmit() {
-        return $('button[type="submit"]');
+        return $("//input[@id='btnLogin']");
     }
 
     /**
