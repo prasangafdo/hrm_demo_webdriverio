@@ -1,4 +1,10 @@
 exports.config = {
+        reporters: [['allure', {
+            outputDir: 'allure-results',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: true,
+        }]],
+        // ...
     //
     // ====================
     // Runner Configuration
@@ -21,7 +27,8 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        // './test/specs/**/*.js'
+        './test/specs/LoginTest.js'
     ],
     // Patterns to exclude.
     exclude: [
