@@ -3,13 +3,47 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "should login with valid credentials",
-    "uid" : "ac095405bcaa703e",
+    "uid" : "73c87f7bd9fb4525",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
       "start" : 1647622043476,
       "stop" : 1647622053544,
       "duration" : 10068
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Verify the admin can login with valid credentials",
+    "uid" : "80be6a2e90993d8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1647691884647,
+      "stop" : 1647691893341,
+      "duration" : 8694
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 2,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Verify the admin can navigate to User Management page",
+    "uid" : "f7cd5299d75f7fde",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1647691884679,
+      "stop" : 1647691894574,
+      "duration" : 9895
     },
     "flaky" : false,
     "newFailed" : false,

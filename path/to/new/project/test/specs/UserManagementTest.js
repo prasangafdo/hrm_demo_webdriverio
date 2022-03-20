@@ -3,7 +3,7 @@
 const LoginPage = require('../pageobjects/login.page');
 const LandingPage = require('../pageobjects/landing.page');
 
-describe('HRM Demo application', () => {
+describe('HRM Demo application', () => {//Scenario name comes here
     it('Verify the admin can navigate to User Management page', async () => {
         await LoginPage.open();
         await LoginPage.login('Admin', 'admin123');

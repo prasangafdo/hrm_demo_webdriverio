@@ -1,6 +1,17 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
+    "uid" : "e7d2fa549fed77e9a702b317a2fa63af",
+    "name" : "HRM Demo application",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
     "uid" : "ff9b43c34a817b44fa9b6edf61b00141",
     "name" : "My Login application",
     "statistic" : {

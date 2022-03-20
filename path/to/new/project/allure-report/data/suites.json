@@ -5,7 +5,7 @@
     "name" : "My Login application",
     "children" : [ {
       "name" : "should login with valid credentials",
-      "uid" : "ac095405bcaa703e",
+      "uid" : "73c87f7bd9fb4525",
       "parentUid" : "ff9b43c34a817b44fa9b6edf61b00141",
       "status" : "passed",
       "time" : {
@@ -22,5 +22,43 @@
       "parameters" : [ "chrome" ]
     } ],
     "uid" : "ff9b43c34a817b44fa9b6edf61b00141"
+  }, {
+    "name" : "HRM Demo application",
+    "children" : [ {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "80be6a2e90993d8",
+      "parentUid" : "e7d2fa549fed77e9a702b317a2fa63af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647691884647,
+        "stop" : 1647691893341,
+        "duration" : 8694
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 2,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can navigate to User Management page",
+      "uid" : "f7cd5299d75f7fde",
+      "parentUid" : "e7d2fa549fed77e9a702b317a2fa63af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647691884679,
+        "stop" : 1647691894574,
+        "duration" : 9895
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "e7d2fa549fed77e9a702b317a2fa63af"
   } ]
 }

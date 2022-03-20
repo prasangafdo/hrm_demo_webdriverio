@@ -1,5 +1,25 @@
 [ {
-  "uid" : "ac095405bcaa703e",
+  "uid" : "80be6a2e90993d8",
+  "name" : "Verify the admin can login with valid credentials",
+  "time" : {
+    "start" : 1647691884647,
+    "stop" : 1647691893341,
+    "duration" : 8694
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7cd5299d75f7fde",
+  "name" : "Verify the admin can navigate to User Management page",
+  "time" : {
+    "start" : 1647691884679,
+    "stop" : 1647691894574,
+    "duration" : 9895
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73c87f7bd9fb4525",
   "name" : "should login with valid credentials",
   "time" : {
     "start" : 1647622043476,

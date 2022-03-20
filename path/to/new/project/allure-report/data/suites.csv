@@ -1,2 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Mar 19 17:41:24 IST 2022","Sat Mar 19 17:41:34 IST 2022","9895","","HRM Demo application","","HRM Demo application","Verify the admin can navigate to User Management page","Verify the admin can navigate to User Management page",""
 "passed","Fri Mar 18 22:17:23 IST 2022","Fri Mar 18 22:17:33 IST 2022","10068","","My Login application","","My Login application","should login with valid credentials","should login with valid credentials",""
+"passed","Sat Mar 19 17:41:24 IST 2022","Sat Mar 19 17:41:33 IST 2022","8694","","HRM Demo application","","HRM Demo application","Verify the admin can login with valid credentials","Verify the admin can login with valid credentials",""
