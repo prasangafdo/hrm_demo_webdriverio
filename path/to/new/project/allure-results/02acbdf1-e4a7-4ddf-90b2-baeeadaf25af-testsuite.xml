@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1647691884679' stop='1647691894575'>
+    <name>HRM Demo application</name>
+    <title>HRM Demo application</title>
+    <test-cases>
+        <test-case start='1647691884679' status='passed' stop='1647691894574'>
+            <name>Verify the admin can navigate to User Management page</name>
+            <title>Verify the admin can navigate to User Management page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
