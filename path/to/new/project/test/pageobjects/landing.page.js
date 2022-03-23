@@ -20,6 +20,8 @@ class LandingPage extends Page {
     get lblSystemUsers(){
         return $("//h1[text()='System Users']");
     }
+
+
 }
 
 module.exports = new LandingPage();

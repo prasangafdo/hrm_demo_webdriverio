@@ -11,4 +11,12 @@ describe('HRM Demo application', () => {//Scenario name comes here
         await LandingPage.lnkAdmin.click();
         await expect(LandingPage.lblSystemUsers).toBeExisting();
     });
+
+    it('Verify the admin view existing users', async () => {
+        await LoginPage.open();
+        await LoginPage.login('Admin', 'admin123');
+        await expect(LandingPage.lblHRMDemoLogo).toBeExisting();
+        await LandingPage.lnkAdmin.click();
+        await expect(LandingPage.lblSystemUsers).toBeExisting();
+    });
 });
