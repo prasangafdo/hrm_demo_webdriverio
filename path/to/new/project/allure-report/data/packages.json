@@ -5,7 +5,7 @@
     "name" : "My Login application",
     "children" : [ {
       "name" : "should login with valid credentials",
-      "uid" : "73c87f7bd9fb4525",
+      "uid" : "64eca1cf9acfe802",
       "parentUid" : "f43874cc36d1c5833cbb332fc53460ce",
       "status" : "passed",
       "time" : {
@@ -25,25 +25,8 @@
   }, {
     "name" : "HRM Demo application",
     "children" : [ {
-      "name" : "Verify the admin can login with valid credentials",
-      "uid" : "80be6a2e90993d8",
-      "parentUid" : "3d87362c7df140c804e4765b73a83574",
-      "status" : "passed",
-      "time" : {
-        "start" : 1647691884647,
-        "stop" : 1647691893341,
-        "duration" : 8694
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 2,
-      "retriesStatusChange" : false,
-      "parameters" : [ "chrome" ]
-    }, {
       "name" : "Verify the admin can navigate to User Management page",
-      "uid" : "f7cd5299d75f7fde",
+      "uid" : "8d46bfda24db20bc",
       "parentUid" : "3d87362c7df140c804e4765b73a83574",
       "status" : "passed",
       "time" : {
@@ -58,7 +41,45 @@
       "retriesCount" : 0,
       "retriesStatusChange" : false,
       "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "541b6c6f0b5a7550",
+      "parentUid" : "3d87362c7df140c804e4765b73a83574",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648011273234,
+        "stop" : 1648011283331,
+        "duration" : 10097
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
     } ],
     "uid" : "3d87362c7df140c804e4765b73a83574"
+  }, {
+    "name" : "This suite is for testing the Browser",
+    "children" : [ {
+      "name" : "Verify the Browser Object",
+      "uid" : "3cb10ddeff7318f7",
+      "parentUid" : "07304b8de672a00afbfed9f007abfee4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648011273341,
+        "stop" : 1648011273348,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 4,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "07304b8de672a00afbfed9f007abfee4"
   } ]
 }

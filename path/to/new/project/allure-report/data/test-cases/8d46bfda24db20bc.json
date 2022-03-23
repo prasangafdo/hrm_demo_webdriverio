@@ -1,12 +1,12 @@
 {
-  "uid" : "80be6a2e90993d8",
-  "name" : "Verify the admin can login with valid credentials",
-  "fullName" : "HRM Demo application.Verify the admin can login with valid credentials",
-  "historyId" : "66db91ce02ad4ff0fdaf071287f49dba",
+  "uid" : "8d46bfda24db20bc",
+  "name" : "Verify the admin can navigate to User Management page",
+  "fullName" : "HRM Demo application.Verify the admin can navigate to User Management page",
+  "historyId" : "dc5dbea82cac2de72c79e087c4ac224e",
   "time" : {
-    "start" : 1647691884647,
-    "stop" : 1647691893341,
-    "duration" : 8694
+    "start" : 1647691884679,
+    "stop" : 1647691894574,
+    "duration" : 9895
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -15,7 +15,7 @@
   "newFailed" : false,
   "newBroken" : false,
   "newPassed" : false,
-  "retriesCount" : 2,
+  "retriesCount" : 0,
   "retriesStatusChange" : false,
   "beforeStages" : [ ],
   "afterStages" : [ ],
@@ -27,7 +27,7 @@
     "value" : "javascript"
   }, {
     "name" : "thread",
-    "value" : "0-0"
+    "value" : "0-1"
   }, {
     "name" : "suite",
     "value" : "HRM Demo application"
@@ -36,7 +36,7 @@
     "value" : "HRM Demo application"
   }, {
     "name" : "testMethod",
-    "value" : "Verify the admin can login with valid credentials"
+    "value" : "Verify the admin can navigate to User Management page"
   }, {
     "name" : "package",
     "value" : "HRM Demo application"
@@ -53,26 +53,10 @@
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ {
-      "uid" : "459670bb436089ed",
-      "status" : "passed",
-      "time" : {
-        "start" : 1647691837637,
-        "stop" : 1647691846183,
-        "duration" : 8546
-      }
-    }, {
-      "uid" : "d3a44350b93942cb",
-      "status" : "passed",
-      "time" : {
-        "start" : 1647622826005,
-        "stop" : 1647622835301,
-        "duration" : 9296
-      }
-    } ],
+    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "80be6a2e90993d8.json",
+  "source" : "8d46bfda24db20bc.json",
   "parameterValues" : [ "chrome" ]
 }

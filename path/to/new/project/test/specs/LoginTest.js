@@ -1,5 +1,4 @@
 const LoginPage = require('../pageobjects/login.page');
-const SecurePage = require('../pageobjects/secure.page');
 const LandingPage = require('../pageobjects/landing.page');
 
 describe('HRM Demo application', () => {

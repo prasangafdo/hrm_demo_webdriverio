@@ -1,15 +1,5 @@
 [ {
-  "uid" : "f7cd5299d75f7fde",
-  "name" : "Verify the admin can navigate to User Management page",
-  "time" : {
-    "start" : 1647691884679,
-    "stop" : 1647691894574,
-    "duration" : 9895
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "73c87f7bd9fb4525",
+  "uid" : "64eca1cf9acfe802",
   "name" : "should login with valid credentials",
   "time" : {
     "start" : 1647622043476,
@@ -19,12 +9,32 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "80be6a2e90993d8",
+  "uid" : "541b6c6f0b5a7550",
   "name" : "Verify the admin can login with valid credentials",
   "time" : {
-    "start" : 1647691884647,
-    "stop" : 1647691893341,
-    "duration" : 8694
+    "start" : 1648011273234,
+    "stop" : 1648011283331,
+    "duration" : 10097
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3cb10ddeff7318f7",
+  "name" : "Verify the Browser Object",
+  "time" : {
+    "start" : 1648011273341,
+    "stop" : 1648011273348,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d46bfda24db20bc",
+  "name" : "Verify the admin can navigate to User Management page",
+  "time" : {
+    "start" : 1647691884679,
+    "stop" : 1647691894574,
+    "duration" : 9895
   },
   "status" : "passed",
   "severity" : "normal"

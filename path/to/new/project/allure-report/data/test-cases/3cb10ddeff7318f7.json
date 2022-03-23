@@ -1,0 +1,94 @@
+{
+  "uid" : "3cb10ddeff7318f7",
+  "name" : "Verify the Browser Object",
+  "fullName" : "This suite is for testing the Browser.Verify the Browser Object",
+  "historyId" : "7d43b756ae5c7ff7046b364f9bd97f8b",
+  "time" : {
+    "start" : 1648011273341,
+    "stop" : 1648011273348,
+    "duration" : 7
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 4,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "This suite is for testing the Browser"
+  }, {
+    "name" : "testClass",
+    "value" : "This suite is for testing the Browser"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify the Browser Object"
+  }, {
+    "name" : "package",
+    "value" : "This suite is for testing the Browser"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7ca6c0a62c1b41fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648011216528,
+        "stop" : 1648011216532,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "4de0b33601a94e31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648011201113,
+        "stop" : 1648011201117,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "f3744fdd26bb50d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648009270071,
+        "stop" : 1648009270075,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "b2b186bd8acc1219",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647754256411,
+        "stop" : 1647754256415,
+        "duration" : 4
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3cb10ddeff7318f7.json",
+  "parameterValues" : [ "chrome" ]
+}

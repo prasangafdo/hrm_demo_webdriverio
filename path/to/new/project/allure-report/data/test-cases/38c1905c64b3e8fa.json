@@ -1,12 +1,12 @@
 {
-  "uid" : "f7cd5299d75f7fde",
-  "name" : "Verify the admin can navigate to User Management page",
-  "fullName" : "HRM Demo application.Verify the admin can navigate to User Management page",
-  "historyId" : "dc5dbea82cac2de72c79e087c4ac224e",
+  "uid" : "38c1905c64b3e8fa",
+  "name" : "Verify the admin can login with valid credentials",
+  "fullName" : "HRM Demo application.Verify the admin can login with valid credentials",
+  "historyId" : "66db91ce02ad4ff0fdaf071287f49dba",
   "time" : {
-    "start" : 1647691884679,
-    "stop" : 1647691894574,
-    "duration" : 9895
+    "start" : 1647691884647,
+    "stop" : 1647691893341,
+    "duration" : 8694
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -27,7 +27,7 @@
     "value" : "javascript"
   }, {
     "name" : "thread",
-    "value" : "0-1"
+    "value" : "0-0"
   }, {
     "name" : "suite",
     "value" : "HRM Demo application"
@@ -36,7 +36,7 @@
     "value" : "HRM Demo application"
   }, {
     "name" : "testMethod",
-    "value" : "Verify the admin can navigate to User Management page"
+    "value" : "Verify the admin can login with valid credentials"
   }, {
     "name" : "package",
     "value" : "HRM Demo application"
@@ -49,14 +49,12 @@
     "value" : "chrome"
   } ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f7cd5299d75f7fde.json",
+  "source" : "38c1905c64b3e8fa.json",
   "parameterValues" : [ "chrome" ]
 }

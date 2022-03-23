@@ -17,11 +17,6 @@ class LandingPage extends Page {
         return $("//a[@id='menu_admin_viewAdminModule']");
     }
 
-    get lblSystemUsers(){
-        return $("//h1[text()='System Users']");
-    }
-
-
 }
 
 module.exports = new LandingPage();
