@@ -9,13 +9,14 @@ describe('HRM Demo application -- Verify User Management Screen', () => {//Scena
         await expect(LandingPage.lblHRMDemoLogo).toBeExisting();
         await LandingPage.lnkAdmin.click();
         await expect(UserManagement.lblSystemUsers).toBeExisting();
+        await browser.close();
     });
 
-    // it('Verify the admin can view existing users', async () => {
-    //     await LoginPage.open();
-    //     await LoginPage.login('Admin', 'admin123');
-    //     await expect(LandingPage.lblHRMDemoLogo).toBeExisting();
-    //     await LandingPage.lnkAdmin.click();
-    //     await expect(UserManagement.lblSystemUsers).toBeExisting();
-    // });
+    it('Verify the admin can view existing users', async () => {
+        // await LoginPage.open();                              //Logging is not required, since Webdriver io continues the test from the
+        // await LoginPage.login('Admin', 'admin123');
+        // await expect(LandingPage.lblHRMDemoLogo).toBeExisting();
+        // await LandingPage.lnkAdmin.click();
+        await expect(UserManagement.lblUsernameTable).toBeExisting();
+    });
 });

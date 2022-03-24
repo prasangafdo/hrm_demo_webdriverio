@@ -7,6 +7,10 @@ class UserManagementPage extends Page{
         return $("//h1[text()='System Users']");
     }
 
+    get lblUsernameTable(){
+        return $("//td/a");
+    }
+
 }
 
 //td[@class='left']/a
