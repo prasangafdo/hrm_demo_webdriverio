@@ -1,12 +1,12 @@
 {
-  "uid" : "287a204513104c69",
-  "name" : "Verify the admin can login with valid credentials",
-  "fullName" : "HRM Demo application.Verify the admin can login with valid credentials",
-  "historyId" : "66db91ce02ad4ff0fdaf071287f49dba",
+  "uid" : "9732493729c682c8",
+  "name" : "should login with valid credentials",
+  "fullName" : "My Login application.should login with valid credentials",
+  "historyId" : "d125d6fd504ae33dff5cc1500e6ff1a2",
   "time" : {
-    "start" : 1648011464839,
-    "stop" : 1648011475085,
-    "duration" : 10246
+    "start" : 1647622043476,
+    "stop" : 1647622053544,
+    "duration" : 10068
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -30,16 +30,16 @@
     "value" : "0-0"
   }, {
     "name" : "suite",
-    "value" : "HRM Demo application"
+    "value" : "My Login application"
   }, {
     "name" : "testClass",
-    "value" : "HRM Demo application"
+    "value" : "My Login application"
   }, {
     "name" : "testMethod",
-    "value" : "Verify the admin can login with valid credentials"
+    "value" : "should login with valid credentials"
   }, {
     "name" : "package",
-    "value" : "HRM Demo application"
+    "value" : "My Login application"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -49,12 +49,14 @@
     "value" : "chrome"
   } ],
   "links" : [ ],
-  "hidden" : true,
-  "retry" : true,
+  "hidden" : false,
+  "retry" : false,
   "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "287a204513104c69.json",
+  "source" : "9732493729c682c8.json",
   "parameterValues" : [ "chrome" ]
 }

@@ -1,12 +1,12 @@
 {
-  "uid" : "535537197e5ea086",
+  "uid" : "e80ece791140c0e3",
   "name" : "Verify the admin can login with valid credentials",
   "fullName" : "HRM Demo application.Verify the admin can login with valid credentials",
   "historyId" : "66db91ce02ad4ff0fdaf071287f49dba",
   "time" : {
-    "start" : 1647622826005,
-    "stop" : 1647622835301,
-    "duration" : 9296
+    "start" : 1648118542459,
+    "stop" : 1648118550938,
+    "duration" : 8479
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -55,6 +55,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "535537197e5ea086.json",
+  "source" : "e80ece791140c0e3.json",
   "parameterValues" : [ "chrome" ]
 }

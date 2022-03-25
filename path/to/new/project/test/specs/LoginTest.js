@@ -10,6 +10,10 @@ describe('HRM Demo application', () => {
         // await expect(SecurePage.flashAlert).toHaveTextContaining(
         //     'You logged into a secure area!');
     });
+
+    it('Verify logged URL', async() => {
+       await expect(browser).toHaveUrlContaining('https://opensource-demo.orangehrmlive.com/index.php'); //Cannot confirm the url since the site is down.
+    });
 });
 
 

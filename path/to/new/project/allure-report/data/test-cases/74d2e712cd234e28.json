@@ -1,0 +1,60 @@
+{
+  "uid" : "74d2e712cd234e28",
+  "name" : "Verify the admin can login with valid credentials",
+  "fullName" : "HRM Demo application.Verify the admin can login with valid credentials",
+  "historyId" : "66db91ce02ad4ff0fdaf071287f49dba",
+  "time" : {
+    "start" : 1648011464839,
+    "stop" : 1648011475085,
+    "duration" : 10246
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "HRM Demo application"
+  }, {
+    "name" : "testClass",
+    "value" : "HRM Demo application"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify the admin can login with valid credentials"
+  }, {
+    "name" : "package",
+    "value" : "HRM Demo application"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "74d2e712cd234e28.json",
+  "parameterValues" : [ "chrome" ]
+}

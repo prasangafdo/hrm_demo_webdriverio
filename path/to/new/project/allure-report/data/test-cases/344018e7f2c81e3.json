@@ -1,12 +1,12 @@
 {
-  "uid" : "90450dfd2358588e",
-  "name" : "Verify the Browser Object",
-  "fullName" : "This suite is for testing the Browser.Verify the Browser Object",
-  "historyId" : "7d43b756ae5c7ff7046b364f9bd97f8b",
+  "uid" : "344018e7f2c81e3",
+  "name" : "Verify the admin can navigate to User Management page",
+  "fullName" : "HRM Demo application -- Verify User Management Screen.Verify the admin can navigate to User Management page",
+  "historyId" : "c24e44da91a858ff56bf61b83a4ccd9f",
   "time" : {
-    "start" : 1648009270071,
-    "stop" : 1648009270075,
-    "duration" : 4
+    "start" : 1648120221668,
+    "stop" : 1648120232183,
+    "duration" : 10515
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -27,19 +27,19 @@
     "value" : "javascript"
   }, {
     "name" : "thread",
-    "value" : "0-0"
+    "value" : "0-1"
   }, {
     "name" : "suite",
-    "value" : "This suite is for testing the Browser"
+    "value" : "HRM Demo application -- Verify User Management Screen"
   }, {
     "name" : "testClass",
-    "value" : "This suite is for testing the Browser"
+    "value" : "HRM Demo application -- Verify User Management Screen"
   }, {
     "name" : "testMethod",
-    "value" : "Verify the Browser Object"
+    "value" : "Verify the admin can navigate to User Management page"
   }, {
     "name" : "package",
-    "value" : "This suite is for testing the Browser"
+    "value" : "HRM Demo application -- Verify User Management Screen"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -55,6 +55,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "90450dfd2358588e.json",
+  "source" : "344018e7f2c81e3.json",
   "parameterValues" : [ "chrome" ]
 }

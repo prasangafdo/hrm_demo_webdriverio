@@ -23,7 +23,7 @@ exports.config = {
     specs: [
         // './test/specs/**/*.js'
         './test/specs/LoginTest.js',
-        './test/specs/UserManagementTest.js',
+        // './test/specs/UserManagementTest.js',
         './test/specs/BrowserTest.js'
     ],
     // Patterns to exclude.
@@ -98,6 +98,8 @@ exports.config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
     baseUrl: 'http://localhost',
+
+    testVariable: 'This is a test variable',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,

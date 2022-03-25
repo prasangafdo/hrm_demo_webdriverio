@@ -1,12 +1,12 @@
 {
-  "uid" : "7d2e6981c2c50003",
-  "name" : "Verify the Browser Object",
-  "fullName" : "This suite is for testing the Browser.Verify the Browser Object",
-  "historyId" : "7d43b756ae5c7ff7046b364f9bd97f8b",
+  "uid" : "c8e220a26c61fa9b",
+  "name" : "Verify the admin can login with valid credentials",
+  "fullName" : "HRM Demo application.Verify the admin can login with valid credentials",
+  "historyId" : "66db91ce02ad4ff0fdaf071287f49dba",
   "time" : {
-    "start" : 1648011273341,
-    "stop" : 1648011273348,
-    "duration" : 7
+    "start" : 1648118308013,
+    "stop" : 1648118321533,
+    "duration" : 13520
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -27,19 +27,19 @@
     "value" : "javascript"
   }, {
     "name" : "thread",
-    "value" : "0-2"
+    "value" : "0-0"
   }, {
     "name" : "suite",
-    "value" : "This suite is for testing the Browser"
+    "value" : "HRM Demo application"
   }, {
     "name" : "testClass",
-    "value" : "This suite is for testing the Browser"
+    "value" : "HRM Demo application"
   }, {
     "name" : "testMethod",
-    "value" : "Verify the Browser Object"
+    "value" : "Verify the admin can login with valid credentials"
   }, {
     "name" : "package",
-    "value" : "This suite is for testing the Browser"
+    "value" : "HRM Demo application"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -55,6 +55,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7d2e6981c2c50003.json",
+  "source" : "c8e220a26c61fa9b.json",
   "parameterValues" : [ "chrome" ]
 }

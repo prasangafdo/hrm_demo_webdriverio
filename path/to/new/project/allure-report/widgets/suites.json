@@ -1,6 +1,17 @@
 {
-  "total" : 3,
+  "total" : 4,
   "items" : [ {
+    "uid" : "79167dbdfd8f6f7a7fe7385bade52336",
+    "name" : "HRM Demo application -- Verify User Management Screen",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
     "uid" : "e7d2fa549fed77e9a702b317a2fa63af",
     "name" : "HRM Demo application",
     "statistic" : {
