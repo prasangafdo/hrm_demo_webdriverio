@@ -5,7 +5,7 @@
     "name" : "My Login application",
     "children" : [ {
       "name" : "should login with valid credentials",
-      "uid" : "9732493729c682c8",
+      "uid" : "9beb46a599e64198",
       "parentUid" : "ff9b43c34a817b44fa9b6edf61b00141",
       "status" : "passed",
       "time" : {
@@ -26,7 +26,7 @@
     "name" : "HRM Demo application",
     "children" : [ {
       "name" : "Verify the admin can navigate to User Management page",
-      "uid" : "6993d029d52d27f1",
+      "uid" : "fe9ee42682d04c02",
       "parentUid" : "e7d2fa549fed77e9a702b317a2fa63af",
       "status" : "passed",
       "time" : {
@@ -43,7 +43,7 @@
       "parameters" : [ "chrome" ]
     }, {
       "name" : "Verify the admin can login with valid credentials",
-      "uid" : "15b4b55c3053f825",
+      "uid" : "337e60a07e83700c",
       "parentUid" : "e7d2fa549fed77e9a702b317a2fa63af",
       "status" : "passed",
       "time" : {
@@ -64,7 +64,7 @@
     "name" : "HRM Demo application -- Verify User Management Screen",
     "children" : [ {
       "name" : "Verify the admin can navigate to User Management page",
-      "uid" : "219904435ac744f0",
+      "uid" : "e00336bd4d592b85",
       "parentUid" : "79167dbdfd8f6f7a7fe7385bade52336",
       "status" : "broken",
       "time" : {
@@ -81,7 +81,7 @@
       "parameters" : [ "chrome" ]
     }, {
       "name" : "Verify the admin can view existing users",
-      "uid" : "d07539d1e2b66d5b",
+      "uid" : "6ce82aca4a051e5b",
       "parentUid" : "79167dbdfd8f6f7a7fe7385bade52336",
       "status" : "broken",
       "time" : {
@@ -102,19 +102,19 @@
     "name" : "This suite is for testing the Browser",
     "children" : [ {
       "name" : "Verify the Browser Object",
-      "uid" : "ee2c3fafbc249f51",
+      "uid" : "c3cbfab1dfc7f77b",
       "parentUid" : "b83aefc7b9a129c3265709938cdea729",
       "status" : "passed",
       "time" : {
-        "start" : 1648225894671,
-        "stop" : 1648225894675,
+        "start" : 1648226424230,
+        "stop" : 1648226424234,
         "duration" : 4
       },
       "flaky" : false,
       "newFailed" : false,
       "newPassed" : false,
       "newBroken" : false,
-      "retriesCount" : 18,
+      "retriesCount" : 24,
       "retriesStatusChange" : false,
       "parameters" : [ "chrome" ]
     } ],

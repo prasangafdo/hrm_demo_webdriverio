@@ -3,7 +3,7 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "should login with valid credentials",
-    "uid" : "9732493729c682c8",
+    "uid" : "9beb46a599e64198",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -20,7 +20,7 @@
     "parameters" : [ "chrome" ]
   }, {
     "name" : "Verify the admin can navigate to User Management page",
-    "uid" : "6993d029d52d27f1",
+    "uid" : "fe9ee42682d04c02",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -37,7 +37,7 @@
     "parameters" : [ "chrome" ]
   }, {
     "name" : "Verify the admin can login with valid credentials",
-    "uid" : "15b4b55c3053f825",
+    "uid" : "337e60a07e83700c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -54,7 +54,7 @@
     "parameters" : [ "chrome" ]
   }, {
     "name" : "Verify the admin can navigate to User Management page",
-    "uid" : "219904435ac744f0",
+    "uid" : "e00336bd4d592b85",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
@@ -71,7 +71,7 @@
     "parameters" : [ "chrome" ]
   }, {
     "name" : "Verify the admin can view existing users",
-    "uid" : "d07539d1e2b66d5b",
+    "uid" : "6ce82aca4a051e5b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
@@ -88,19 +88,19 @@
     "parameters" : [ "chrome" ]
   }, {
     "name" : "Verify the Browser Object",
-    "uid" : "ee2c3fafbc249f51",
+    "uid" : "c3cbfab1dfc7f77b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1648225894671,
-      "stop" : 1648225894675,
+      "start" : 1648226424230,
+      "stop" : 1648226424234,
       "duration" : 4
     },
     "flaky" : false,
     "newFailed" : false,
     "newPassed" : false,
     "newBroken" : false,
-    "retriesCount" : 18,
+    "retriesCount" : 24,
     "retriesStatusChange" : false,
     "parameters" : [ "chrome" ]
   } ]

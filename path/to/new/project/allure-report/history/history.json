@@ -9,31 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6993d029d52d27f1",
+      "uid" : "fe9ee42682d04c02",
       "status" : "passed",
       "time" : {
         "start" : 1647691884679,
         "stop" : 1647691894574,
         "duration" : 9895
-      }
-    } ]
-  },
-  "66db91ce02ad4ff0fdaf071287f49dba" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "15b4b55c3053f825",
-      "status" : "passed",
-      "time" : {
-        "start" : 1648120585889,
-        "stop" : 1648120595012,
-        "duration" : 9123
       }
     } ]
   },
@@ -47,12 +28,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ee2c3fafbc249f51",
+      "uid" : "c3cbfab1dfc7f77b",
       "status" : "passed",
       "time" : {
-        "start" : 1648225894671,
-        "stop" : 1648225894675,
+        "start" : 1648226424230,
+        "stop" : 1648226424234,
         "duration" : 4
+      }
+    } ]
+  },
+  "66db91ce02ad4ff0fdaf071287f49dba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "337e60a07e83700c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120585889,
+        "stop" : 1648120595012,
+        "duration" : 9123
       }
     } ]
   },
@@ -66,7 +66,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d07539d1e2b66d5b",
+      "uid" : "6ce82aca4a051e5b",
       "status" : "broken",
       "statusDetails" : "Can't call setValue on element with selector \"//input[@id='txtUsername']\" because element wasn't found",
       "time" : {
@@ -86,7 +86,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "219904435ac744f0",
+      "uid" : "e00336bd4d592b85",
       "status" : "broken",
       "statusDetails" : "browser.close is not a function",
       "time" : {
@@ -106,7 +106,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9732493729c682c8",
+      "uid" : "9beb46a599e64198",
       "status" : "passed",
       "time" : {
         "start" : 1647622043476,

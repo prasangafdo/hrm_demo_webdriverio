@@ -1,15 +1,5 @@
 [ {
-  "uid" : "15b4b55c3053f825",
-  "name" : "Verify the admin can login with valid credentials",
-  "time" : {
-    "start" : 1648120585889,
-    "stop" : 1648120595012,
-    "duration" : 9123
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9732493729c682c8",
+  "uid" : "9beb46a599e64198",
   "name" : "should login with valid credentials",
   "time" : {
     "start" : 1647622043476,
@@ -19,27 +9,7 @@
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "219904435ac744f0",
-  "name" : "Verify the admin can navigate to User Management page",
-  "time" : {
-    "start" : 1648120585912,
-    "stop" : 1648120597095,
-    "duration" : 11183
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "ee2c3fafbc249f51",
-  "name" : "Verify the Browser Object",
-  "time" : {
-    "start" : 1648225894671,
-    "stop" : 1648225894675,
-    "duration" : 4
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d07539d1e2b66d5b",
+  "uid" : "6ce82aca4a051e5b",
   "name" : "Verify the admin can view existing users",
   "time" : {
     "start" : 1648120597095,
@@ -49,12 +19,42 @@
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "6993d029d52d27f1",
+  "uid" : "e00336bd4d592b85",
+  "name" : "Verify the admin can navigate to User Management page",
+  "time" : {
+    "start" : 1648120585912,
+    "stop" : 1648120597095,
+    "duration" : 11183
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "fe9ee42682d04c02",
   "name" : "Verify the admin can navigate to User Management page",
   "time" : {
     "start" : 1647691884679,
     "stop" : 1647691894574,
     "duration" : 9895
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "337e60a07e83700c",
+  "name" : "Verify the admin can login with valid credentials",
+  "time" : {
+    "start" : 1648120585889,
+    "stop" : 1648120595012,
+    "duration" : 9123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3cbfab1dfc7f77b",
+  "name" : "Verify the Browser Object",
+  "time" : {
+    "start" : 1648226424230,
+    "stop" : 1648226424234,
+    "duration" : 4
   },
   "status" : "passed",
   "severity" : "normal"

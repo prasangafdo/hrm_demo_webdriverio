@@ -1,0 +1,60 @@
+{
+  "uid" : "a2bac9189ff4cab4",
+  "name" : "Verify the Browser Object",
+  "fullName" : "This suite is for testing the Browser.Verify the Browser Object",
+  "historyId" : "7d43b756ae5c7ff7046b364f9bd97f8b",
+  "time" : {
+    "start" : 1648226112196,
+    "stop" : 1648226112200,
+    "duration" : 4
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "This suite is for testing the Browser"
+  }, {
+    "name" : "testClass",
+    "value" : "This suite is for testing the Browser"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify the Browser Object"
+  }, {
+    "name" : "package",
+    "value" : "This suite is for testing the Browser"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a2bac9189ff4cab4.json",
+  "parameterValues" : [ "chrome" ]
+}
