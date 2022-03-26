@@ -1,4 +1,101 @@
 {
+  "dc5dbea82cac2de72c79e087c4ac224e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fe9ee42682d04c02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647691884679,
+        "stop" : 1647691894574,
+        "duration" : 9895
+      }
+    } ]
+  },
+  "7d43b756ae5c7ff7046b364f9bd97f8b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c3cbfab1dfc7f77b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648226424230,
+        "stop" : 1648226424234,
+        "duration" : 4
+      }
+    } ]
+  },
+  "66db91ce02ad4ff0fdaf071287f49dba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "337e60a07e83700c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120585889,
+        "stop" : 1648120595012,
+        "duration" : 9123
+      }
+    } ]
+  },
+  "f5e0d64c57bc5a313f9b38323b48c03d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6ce82aca4a051e5b",
+      "status" : "broken",
+      "statusDetails" : "Can't call setValue on element with selector \"//input[@id='txtUsername']\" because element wasn't found",
+      "time" : {
+        "start" : 1648120597095,
+        "stop" : 1648120607644,
+        "duration" : 10549
+      }
+    } ]
+  },
+  "c24e44da91a858ff56bf61b83a4ccd9f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e00336bd4d592b85",
+      "status" : "broken",
+      "statusDetails" : "browser.close is not a function",
+      "time" : {
+        "start" : 1648120585912,
+        "stop" : 1648120597095,
+        "duration" : 11183
+      }
+    } ]
+  },
   "d125d6fd504ae33dff5cc1500e6ff1a2" : {
     "statistic" : {
       "failed" : 0,
@@ -9,7 +106,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ac095405bcaa703e",
+      "uid" : "9beb46a599e64198",
       "status" : "passed",
       "time" : {
         "start" : 1647622043476,

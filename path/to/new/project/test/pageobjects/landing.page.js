@@ -12,6 +12,11 @@ class LandingPage extends Page {
     get lblHRMDemoLogo() {
         return $("//img[@alt='OrangeHRM']");
     }
+
+    get lnkAdmin(){
+        return $("//a[@id='menu_admin_viewAdminModule']");
+    }
+
 }
 
 module.exports = new LandingPage();

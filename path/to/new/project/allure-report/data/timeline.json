@@ -4,8 +4,246 @@
   "children" : [ {
     "name" : "0-0",
     "children" : [ {
+      "name" : "Verify the Browser Object",
+      "uid" : "e06e74e6dbf1f08b",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648225894671,
+        "stop" : 1648225894675,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "f7e9b3fb84ddb6bf",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648011216528,
+        "stop" : 1648011216532,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "25250f4b786b8041",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648011201113,
+        "stop" : 1648011201117,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "255dadcefd3f7d2",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648011273234,
+        "stop" : 1648011283331,
+        "duration" : 10097
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "5a244d57132e988a",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648225987286,
+        "stop" : 1648225987289,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "274ce09e5199703e",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648118542459,
+        "stop" : 1648118550938,
+        "duration" : 8479
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "a2bac9189ff4cab4",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648226112196,
+        "stop" : 1648226112200,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "796e540d23f9b829",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120221622,
+        "stop" : 1648120230052,
+        "duration" : 8430
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "6fab76833788e7a1",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648226075729,
+        "stop" : 1648226075733,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "9762b47daca64761",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648225813400,
+        "stop" : 1648225813406,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "c9b697904f764d09",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648226034936,
+        "stop" : 1648226034941,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "8dfe66b1e8a6cbb7",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647691884647,
+        "stop" : 1647691893341,
+        "duration" : 8694
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "770689523de8ec32",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647622826005,
+        "stop" : 1647622835301,
+        "duration" : 9296
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "83955b4199164782",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647691837637,
+        "stop" : 1647691846183,
+        "duration" : 8546
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
       "name" : "should login with valid credentials",
-      "uid" : "ac095405bcaa703e",
+      "uid" : "9beb46a599e64198",
       "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
       "status" : "passed",
       "time" : {
@@ -20,7 +258,627 @@
       "retriesCount" : 0,
       "retriesStatusChange" : false,
       "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "bbc88f1ea9672a8b",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648009270071,
+        "stop" : 1648009270075,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "201660368b17c3cb",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120251693,
+        "stop" : 1648120259904,
+        "duration" : 8211
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "3d718d985ec48345",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648118308013,
+        "stop" : 1648118321533,
+        "duration" : 13520
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "fba7fcb92cb75e83",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648011464839,
+        "stop" : 1648011475085,
+        "duration" : 10246
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "a0f640427b429aa4",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648118368948,
+        "stop" : 1648118377584,
+        "duration" : 8636
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can navigate to User Management page",
+      "uid" : "67d9a4e49e370b1d",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648119259564,
+        "stop" : 1648119269799,
+        "duration" : 10235
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "d9cc6f477db69b21",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120529753,
+        "stop" : 1648120538236,
+        "duration" : 8483
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "3d735ba4df5cf74a",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647754256411,
+        "stop" : 1647754256415,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "487e4ce17a931da6",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648225333225,
+        "stop" : 1648225333229,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "1bb1636fcdfa3de5",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120296685,
+        "stop" : 1648120305194,
+        "duration" : 8509
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "337e60a07e83700c",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120585889,
+        "stop" : 1648120595012,
+        "duration" : 9123
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 12,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "9cafa6699892c3b9",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648225738145,
+        "stop" : 1648225738151,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
     } ],
     "uid" : "516fe00eea05ad99e936fa729b55eff4"
+  }, {
+    "name" : "0-2",
+    "children" : [ {
+      "name" : "Verify the Browser Object",
+      "uid" : "d2db3b24964644c4",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648118368929,
+        "stop" : 1648118368936,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "1350131553c39b61",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120529747,
+        "stop" : 1648120529753,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "596b0daf44597be0",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648224940319,
+        "stop" : 1648224940328,
+        "duration" : 9
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "27eab1bbaca665d8",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648025488471,
+        "stop" : 1648025488486,
+        "duration" : 15
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "3e79dde8062d2e5d",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120296439,
+        "stop" : 1648120296450,
+        "duration" : 11
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "d0999e3cfcf2e170",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648118542462,
+        "stop" : 1648118542469,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "ae0d5f21e7d901f9",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648011273341,
+        "stop" : 1648011273348,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "8299d5eecbf083a6",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120221682,
+        "stop" : 1648120221691,
+        "duration" : 9
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "59e1026e8c29d933",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648011464852,
+        "stop" : 1648011464861,
+        "duration" : 9
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "efbc00bfa8afffde",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120251702,
+        "stop" : 1648120251712,
+        "duration" : 10
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "749b8d9039a3f446",
+      "parentUid" : "880a094af3dffab161e2023284569d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120585834,
+        "stop" : 1648120585843,
+        "duration" : 9
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "880a094af3dffab161e2023284569d6f"
+  }, {
+    "name" : "0-1",
+    "children" : [ {
+      "name" : "Verify the admin can navigate to User Management page",
+      "uid" : "fe4a43da8935d90f",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120296533,
+        "stop" : 1648120306799,
+        "duration" : 10266
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can view existing users",
+      "uid" : "c1d146000d1ae490",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120306800,
+        "stop" : 1648120308007,
+        "duration" : 1207
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can view existing users",
+      "uid" : "ae34c14b72ebb790",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "broken",
+      "time" : {
+        "start" : 1648120539774,
+        "stop" : 1648120550218,
+        "duration" : 10444
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can navigate to User Management page",
+      "uid" : "a690e3437668cf85",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120251704,
+        "stop" : 1648120262017,
+        "duration" : 10313
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can navigate to User Management page",
+      "uid" : "fe9ee42682d04c02",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647691884679,
+        "stop" : 1647691894574,
+        "duration" : 9895
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can view existing users",
+      "uid" : "a16d38719406b416",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "broken",
+      "time" : {
+        "start" : 1648120262018,
+        "stop" : 1648120272487,
+        "duration" : 10469
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can view existing users",
+      "uid" : "6ce82aca4a051e5b",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "broken",
+      "time" : {
+        "start" : 1648120597095,
+        "stop" : 1648120607644,
+        "duration" : 10549
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 4,
+      "retriesStatusChange" : true,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "c3cbfab1dfc7f77b",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648226424230,
+        "stop" : 1648226424234,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 24,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can navigate to User Management page",
+      "uid" : "e00336bd4d592b85",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "broken",
+      "time" : {
+        "start" : 1648120585912,
+        "stop" : 1648120597095,
+        "duration" : 11183
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can navigate to User Management page",
+      "uid" : "1f7dfc810f2771b6",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120221668,
+        "stop" : 1648120232183,
+        "duration" : 10515
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can view existing users",
+      "uid" : "ceb89702d436420",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "broken",
+      "time" : {
+        "start" : 1648120232184,
+        "stop" : 1648120242672,
+        "duration" : 10488
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can navigate to User Management page",
+      "uid" : "336ed3528a54cba9",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "broken",
+      "time" : {
+        "start" : 1648120529755,
+        "stop" : 1648120539774,
+        "duration" : 10019
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the Browser Object",
+      "uid" : "1c6a921d6a38dad9",
+      "parentUid" : "27fa874cadc1574e37a07abb440963bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648226178223,
+        "stop" : 1648226178228,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "27fa874cadc1574e37a07abb440963bd"
   } ]
 }

@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1648120529755' stop='1648120550220'>
+    <name>HRM Demo application -- Verify User Management Screen</name>
+    <title>HRM Demo application -- Verify User Management Screen</title>
+    <test-cases>
+        <test-case start='1648120529755' status='broken' stop='1648120539774'>
+            <name>Verify the admin can navigate to User Management page</name>
+            <title>Verify the admin can navigate to User Management page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>browser.close is not a function</message>
+                <stack-trace>TypeError: browser.close is not a function
+                    at Context.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\specs\UserManagementTest.js:12:17)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1648120539774' status='broken' stop='1648120550218'>
+            <name>Verify the admin can view existing users</name>
+            <title>Verify the admin can view existing users</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call setValue on element with selector "//input[@id='txtUsername']" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "//input[@id='txtUsername']" because element wasn't found
+                    at implicitWait (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async LoginPage.login (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\pageobjects\login.page.js:29:9)
+                    at async Context.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\specs\UserManagementTest.js:17:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

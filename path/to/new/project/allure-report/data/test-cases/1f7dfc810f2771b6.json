@@ -1,0 +1,60 @@
+{
+  "uid" : "1f7dfc810f2771b6",
+  "name" : "Verify the admin can navigate to User Management page",
+  "fullName" : "HRM Demo application -- Verify User Management Screen.Verify the admin can navigate to User Management page",
+  "historyId" : "c24e44da91a858ff56bf61b83a4ccd9f",
+  "time" : {
+    "start" : 1648120221668,
+    "stop" : 1648120232183,
+    "duration" : 10515
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "HRM Demo application -- Verify User Management Screen"
+  }, {
+    "name" : "testClass",
+    "value" : "HRM Demo application -- Verify User Management Screen"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify the admin can navigate to User Management page"
+  }, {
+    "name" : "package",
+    "value" : "HRM Demo application -- Verify User Management Screen"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1f7dfc810f2771b6.json",
+  "parameterValues" : [ "chrome" ]
+}

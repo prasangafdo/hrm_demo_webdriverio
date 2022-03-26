@@ -5,7 +5,7 @@
     "name" : "My Login application",
     "children" : [ {
       "name" : "should login with valid credentials",
-      "uid" : "ac095405bcaa703e",
+      "uid" : "9beb46a599e64198",
       "parentUid" : "ff9b43c34a817b44fa9b6edf61b00141",
       "status" : "passed",
       "time" : {
@@ -22,5 +22,102 @@
       "parameters" : [ "chrome" ]
     } ],
     "uid" : "ff9b43c34a817b44fa9b6edf61b00141"
+  }, {
+    "name" : "HRM Demo application",
+    "children" : [ {
+      "name" : "Verify the admin can navigate to User Management page",
+      "uid" : "fe9ee42682d04c02",
+      "parentUid" : "e7d2fa549fed77e9a702b317a2fa63af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647691884679,
+        "stop" : 1647691894574,
+        "duration" : 9895
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can login with valid credentials",
+      "uid" : "337e60a07e83700c",
+      "parentUid" : "e7d2fa549fed77e9a702b317a2fa63af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648120585889,
+        "stop" : 1648120595012,
+        "duration" : 9123
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 12,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "e7d2fa549fed77e9a702b317a2fa63af"
+  }, {
+    "name" : "HRM Demo application -- Verify User Management Screen",
+    "children" : [ {
+      "name" : "Verify the admin can navigate to User Management page",
+      "uid" : "e00336bd4d592b85",
+      "parentUid" : "79167dbdfd8f6f7a7fe7385bade52336",
+      "status" : "broken",
+      "time" : {
+        "start" : 1648120585912,
+        "stop" : 1648120597095,
+        "duration" : 11183
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Verify the admin can view existing users",
+      "uid" : "6ce82aca4a051e5b",
+      "parentUid" : "79167dbdfd8f6f7a7fe7385bade52336",
+      "status" : "broken",
+      "time" : {
+        "start" : 1648120597095,
+        "stop" : 1648120607644,
+        "duration" : 10549
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 4,
+      "retriesStatusChange" : true,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "79167dbdfd8f6f7a7fe7385bade52336"
+  }, {
+    "name" : "This suite is for testing the Browser",
+    "children" : [ {
+      "name" : "Verify the Browser Object",
+      "uid" : "c3cbfab1dfc7f77b",
+      "parentUid" : "b83aefc7b9a129c3265709938cdea729",
+      "status" : "passed",
+      "time" : {
+        "start" : 1648226424230,
+        "stop" : 1648226424234,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 24,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "b83aefc7b9a129c3265709938cdea729"
   } ]
 }

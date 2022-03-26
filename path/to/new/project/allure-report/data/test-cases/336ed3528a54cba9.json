@@ -1,0 +1,62 @@
+{
+  "uid" : "336ed3528a54cba9",
+  "name" : "Verify the admin can navigate to User Management page",
+  "fullName" : "HRM Demo application -- Verify User Management Screen.Verify the admin can navigate to User Management page",
+  "historyId" : "c24e44da91a858ff56bf61b83a4ccd9f",
+  "time" : {
+    "start" : 1648120529755,
+    "stop" : 1648120539774,
+    "duration" : 10019
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "browser.close is not a function",
+  "statusTrace" : "TypeError: browser.close is not a function\n                    at Context.<anonymous> (C:\\Users\\Prasanga Fernando\\WebstormProjects\\hrm_demo_webdriverio\\path\\to\\new\\project\\test\\specs\\UserManagementTest.js:12:17)\n                    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "HRM Demo application -- Verify User Management Screen"
+  }, {
+    "name" : "testClass",
+    "value" : "HRM Demo application -- Verify User Management Screen"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify the admin can navigate to User Management page"
+  }, {
+    "name" : "package",
+    "value" : "HRM Demo application -- Verify User Management Screen"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "336ed3528a54cba9.json",
+  "parameterValues" : [ "chrome" ]
+}

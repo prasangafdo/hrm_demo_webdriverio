@@ -1,5 +1,51 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "browser.close is not a function",
+      "children" : [ {
+        "name" : "Verify the admin can navigate to User Management page",
+        "uid" : "e00336bd4d592b85",
+        "parentUid" : "90a7c16da6f4654c027e3d4f9a6a1de7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1648120585912,
+          "stop" : 1648120597095,
+          "duration" : 11183
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 5,
+        "retriesStatusChange" : true,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "90a7c16da6f4654c027e3d4f9a6a1de7"
+    }, {
+      "name" : "Can't call setValue on element with selector \"//input[@id='txtUsername']\" because element wasn't found",
+      "children" : [ {
+        "name" : "Verify the admin can view existing users",
+        "uid" : "6ce82aca4a051e5b",
+        "parentUid" : "11cc47a63ad28c77fcf9a28b7756720a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1648120597095,
+          "stop" : 1648120607644,
+          "duration" : 10549
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : true,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "11cc47a63ad28c77fcf9a28b7756720a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }
