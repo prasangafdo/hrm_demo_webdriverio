@@ -11,6 +11,10 @@ class UserManagementPage extends Page{
         return $("//td/a");
     }
 
+    get txtUsername(){
+        return $('#searchSystemUser_userName');
+    }
+
 }
 
 //td[@class='left']/a
