@@ -28,10 +28,16 @@ describe('HRM Demo application -- Verify User Management Screen', () => {//Scena
         await UserManagement.btnSearch.click();
         await expect(UserManagement.lblUsernameTable).toBeExisting(); //Add a value mapping later
     });
-    it('Verify Admin can add a new ESS User', async ()=>{
+    it('Verify Admin can add a new Enabled ESS User', async ()=>{
         await LoginPage.open();
         await LandingPage.lnkAdmin.click();
         await UserManagement.btnAdd.click();
         await expect(UserManagementAddUser.lblAddUser).toBeDisplayed();
+        await UserManagementAddUser.txtEmployeeName.setValue('Automation ESS Enabled 0001');//Pass value using tab
+        await UserManagementAddUser.txtUsername.setValue('autESSEnabled01');
+        UserManagementAddUser.txtPassword.setValue('test123');
+        UserManagementAddUser.txtConfirmPassword.setValue('test123');
+        UserManagementAddUser.btnSave.click();
+        //Add a verification message
     });
 });
