@@ -24,6 +24,13 @@ describe('HRM Demo application -- Verify User Management Screen', () => {//Scena
         await LoginPage.open();
         await LandingPage.lnkAdmin.click();
         await UserManagement.txtUsername.setValue('Admin');
-        await expect(UserManagement.lblUsernameTable).toBeExisting();
+        await UserManagement.btnSearch.click();
+        await expect(UserManagement.lblUsernameTable).toBeExisting(); //Add a value mapping later
+    });
+    it('Verify Admin can add a new ESS User', async ()=>{
+        await LoginPage.open();
+        await LandingPage.lnkAdmin.click();
+        await UserManagement.btnAdd.click();
+
     });
 });
