@@ -1,6 +1,7 @@
 const LoginPage = require('../pageobjects/login.page');
 const LandingPage = require('../pageobjects/landing.page');
 const UserManagement = require('../pageobjects/user.management.page')
+const UserManagementAddUser = require('../pageobjects/user.management.add.user.page');
 
 describe('HRM Demo application -- Verify User Management Screen', () => {//Scenario name comes here
     it('Verify the admin can navigate to User Management page', async () => {
@@ -31,6 +32,6 @@ describe('HRM Demo application -- Verify User Management Screen', () => {//Scena
         await LoginPage.open();
         await LandingPage.lnkAdmin.click();
         await UserManagement.btnAdd.click();
-
+        await expect(UserManagementAddUser.lblAddUser).toBeDisplayed();
     });
 });
