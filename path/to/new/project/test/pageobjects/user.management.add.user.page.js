@@ -19,7 +19,7 @@ class UserManagementAddUserPage extends Page{
         return $('#systemUser_confirmPassword');
     }
     get btnSave(){
-        return $('btnSave'); //Using name locator
+        return $('#btnSave'); //Using name locator - will look into it later
     }
 }
 
