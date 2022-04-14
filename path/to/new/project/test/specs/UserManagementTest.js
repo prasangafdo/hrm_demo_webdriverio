@@ -28,6 +28,7 @@ describe('HRM Demo application -- Verify User Management Screen', () => {//Scena
         await UserManagement.btnSearch.click();
         await expect(UserManagement.lblUsernameTable).toBeExisting(); //Add a value mapping later
     });
+
     it('Verify Admin can add a new Enabled ESS User', async ()=>{
         await LoginPage.open();
         await LandingPage.lnkAdmin.click();
@@ -43,6 +44,12 @@ describe('HRM Demo application -- Verify User Management Screen', () => {//Scena
         UserManagementAddUser.btnSave.click();
         await browser.pause(5000);
         expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
-        //Add a verification message
+    });
+
+    it('Verify the Admin can search users by employee name', async ()=>{
+        await LoginPage.open();
+        await LandingPage.lnkAdmin.click();
+        await UserManagement.searchUserByEmployeeName('autESSEnabled01');
+        await browser.pause(5000);
     });
 });

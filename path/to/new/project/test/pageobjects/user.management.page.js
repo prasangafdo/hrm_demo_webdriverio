@@ -18,7 +18,15 @@ class UserManagementPage extends Page{
     get btnAdd(){
         return $('#btnAdd');
     }
+
+    async searchUserByEmployeeName(keyword){
+        await this.txtUsername.setValue(keyword);
+        await this.btnSearch.click();
+    }
+
 }
+
+
 //h1[@id='UserHeading' and text()='Add User']
 //td[@class='left']/a
 
