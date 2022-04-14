@@ -42,6 +42,7 @@ describe('HRM Demo application -- Verify User Management Screen', () => {//Scena
         await browser.pause(5000);
         UserManagementAddUser.btnSave.click();
         await browser.pause(5000);
+        expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
         //Add a verification message
     });
 });

@@ -21,6 +21,10 @@ class UserManagementAddUserPage extends Page{
     get btnSave(){
         return $('#btnSave'); //Using name locator - will look into it later
     }
+    get lblSaveSuccessMessage(){
+        return $("//div[@class='message success fadable']");
+    }
+
 }
 
 //td[@class='left']/a
