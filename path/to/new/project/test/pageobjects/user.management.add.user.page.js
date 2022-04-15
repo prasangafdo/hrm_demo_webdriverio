@@ -21,8 +21,17 @@ class UserManagementAddUserPage extends Page{
     get btnSave(){
         return $('#btnSave'); //Using name locator - will look into it later
     }
+    get drpDwnUserRole(){
+        return $('#systemUser_userType');
+    }
     get lblSaveSuccessMessage(){
         return $("//div[@class='message success fadable']");
+    }
+
+    async selectAdminFromDropDown(){
+        console.log('------------------------------------',await this.drpDwnUserRole.getValue())
+        await this.drpDwnUserRole.selectByAttribute('value','1'); //1 = Admin
+        console.log('------------------------------------',await this.drpDwnUserRole.getValue())
     }
 
 }
