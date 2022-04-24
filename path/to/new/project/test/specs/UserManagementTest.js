@@ -75,21 +75,40 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     await browser.pause(6000);
     // });
 
-    it('Verify the Admin can add a new Disabled ESS user', async()=> {
+    // it('Verify the Admin can add a new Disabled ESS user', async()=> {
+    //     await LoginPage.open();
+    //         await LandingPage.lnkAdmin.click();
+    //         await UserManagement.btnAdd.click();
+    //         await expect(UserManagementAddUser.lblAddUser).toBeDisplayed();
+    //         await UserManagementAddUser.txtEmployeeName.setValue('A');//Pass value using tab
+    //         await browser.pause(3000);
+    //         await browser.keys('Tab');
+    //         await UserManagementAddUser.txtUsername.setValue('autESSDisabled01');
+    //         await UserManagementAddUser.selectDisabledFromDropDown();
+    //         UserManagementAddUser.txtPassword.setValue('test12345');
+    //         UserManagementAddUser.txtConfirmPassword.setValue('test12345');
+    //         await browser.pause(5000);
+    //         UserManagementAddUser.btnSave.click();
+    //         await browser.pause(5000);
+    //         expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
+    // });
+
+    it('Verify the Admin can add a new Disabled Admin user', async()=> {
         await LoginPage.open();
-            await LandingPage.lnkAdmin.click();
-            await UserManagement.btnAdd.click();
-            await expect(UserManagementAddUser.lblAddUser).toBeDisplayed();
-            await UserManagementAddUser.txtEmployeeName.setValue('A');//Pass value using tab
-            await browser.pause(3000);
-            await browser.keys('Tab');
-            await UserManagementAddUser.txtUsername.setValue('autESSDisabled01');
-            await UserManagementAddUser.selectDisabledFromDropDown();
-            UserManagementAddUser.txtPassword.setValue('test12345');
-            UserManagementAddUser.txtConfirmPassword.setValue('test12345');
-            await browser.pause(5000);
-            UserManagementAddUser.btnSave.click();
-            await browser.pause(5000);
-            expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
+        await LandingPage.lnkAdmin.click();
+        await UserManagement.btnAdd.click();
+        await expect(UserManagementAddUser.lblAddUser).toBeDisplayed();
+        await UserManagementAddUser.selectAdminFromDropDown();
+        await UserManagementAddUser.txtEmployeeName.setValue('A');//Pass value using tab
+        await browser.pause(3000);
+        await browser.keys('Tab');
+        await UserManagementAddUser.txtUsername.setValue('autAdminDisabled01');
+        await UserManagementAddUser.selectDisabledFromDropDown();
+        UserManagementAddUser.txtPassword.setValue('test12345');
+        UserManagementAddUser.txtConfirmPassword.setValue('test12345');
+        await browser.pause(5000);
+        UserManagementAddUser.btnSave.click();
+        await browser.pause(5000);
+        expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
     });
 });
