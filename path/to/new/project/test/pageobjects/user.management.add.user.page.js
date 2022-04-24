@@ -19,7 +19,7 @@ class UserManagementAddUserPage extends Page{
         return $('#systemUser_confirmPassword');
     }
     get btnSave(){
-        return $('#btnSave'); //Using name locator - will look into it later
+        return $('#btnSave'); //Using id locator
     }
     get drpDwnUserRole(){
         return $('#systemUser_userType');
@@ -27,11 +27,18 @@ class UserManagementAddUserPage extends Page{
     get lblSaveSuccessMessage(){
         return $("//div[@class='message success fadable']");
     }
+    get drpDwnStatus(){
+        return $('#systemUser_status');
+    }
 
     async selectAdminFromDropDown(){
         console.log('------------------------------------',await this.drpDwnUserRole.getValue())
         await this.drpDwnUserRole.selectByAttribute('value','1'); //1 = Admin
         console.log('------------------------------------',await this.drpDwnUserRole.getValue())
+    }
+
+    async selectDisabledFromDropDown(){
+        await this.drpDwnStatus.selectByVisibleText('Disabled');
     }
 
 }
