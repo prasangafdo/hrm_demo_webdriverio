@@ -75,7 +75,7 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     await browser.pause(6000);
     // });
 
-    it('Verify the Admin can add a new Disabled Admin user', async()=> {
+    it('Verify the Admin can add a new Disabled ESS user', async()=> {
         await LoginPage.open();
             await LandingPage.lnkAdmin.click();
             await UserManagement.btnAdd.click();
