@@ -113,6 +113,10 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     });
 
     it('Verify the Admin can delete a user', async()=>{
-
+        await LoginPage.open();
+        await LandingPage.lnkAdmin.click();
+        await UserManagement.btnAdd.click();
+        await UserManagement.searchUserByEmployeeName('autESSEnabled01');
+        
     });
 });
