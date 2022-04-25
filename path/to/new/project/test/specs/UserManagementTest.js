@@ -111,4 +111,8 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         await browser.pause(5000);
         expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
     });
+
+    it('Verify the Admin can delete a user', async()=>{
+
+    });
 });
