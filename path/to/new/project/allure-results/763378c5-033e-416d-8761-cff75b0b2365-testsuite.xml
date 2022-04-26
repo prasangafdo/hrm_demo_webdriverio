@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1650985146008' stop='1650985186525'>
+    <name>HRM Demo application - Verify User Management Screen</name>
+    <title>HRM Demo application - Verify User Management Screen</title>
+    <test-cases>
+        <test-case start='1650985146009' status='passed' stop='1650985157225'>
+            <name>Verify the admin can navigate to User Management page</name>
+            <title>Verify the admin can navigate to User Management page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1650985157226' status='passed' stop='1650985173741'>
+            <name>Verify the Admin can add a new Disabled Admin user</name>
+            <title>Verify the Admin can add a new Disabled Admin user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1650985173741' status='broken' stop='1650985186524'>
+            <name>Verify the Admin can delete a user</name>
+            <title>Verify the Admin can delete a user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call getText on element with selector "((//tr[@class="odd"])[1]/td[@class="left"])[1]" because element wasn't found</message>
+                <stack-trace>Error: Can't call getText on element with selector "((//tr[@class="odd"])[1]/td[@class="left"])[1]" because element wasn't found
+                    at implicitWait (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\specs\UserManagementTest.js:122:38)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -18,6 +18,15 @@ class UserManagementPage extends Page{
     get btnAdd(){
         return $('#btnAdd');
     }
+    get lblCellUsername(){
+        return $('((//tr[@class="odd"])[1]/td[@class="left"])[1]');
+    }
+    get chkFirstCheckbox(){
+        return $("(//tbody//input[@type='checkbox'])[1]");
+    }
+    get btnDelete(){
+        return $('.btnDelete');
+    }
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);

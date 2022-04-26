@@ -93,30 +93,37 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //         expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
     // });
 
-    it('Verify the Admin can add a new Disabled Admin user', async()=> {
-        await LoginPage.open();
-        await LandingPage.lnkAdmin.click();
-        await UserManagement.btnAdd.click();
-        await expect(UserManagementAddUser.lblAddUser).toBeDisplayed();
-        await UserManagementAddUser.selectAdminFromDropDown();
-        await UserManagementAddUser.txtEmployeeName.setValue('A');//Pass value using tab
-        await browser.pause(3000);
-        await browser.keys('Tab');
-        await UserManagementAddUser.txtUsername.setValue('autAdminDisabled01');
-        await UserManagementAddUser.selectDisabledFromDropDown();
-        UserManagementAddUser.txtPassword.setValue('test12345');
-        UserManagementAddUser.txtConfirmPassword.setValue('test12345');
-        await browser.pause(5000);
-        UserManagementAddUser.btnSave.click();
-        await browser.pause(5000);
-        expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
-    });
+    // it('Verify the Admin can add a new Disabled Admin user', async()=> {
+    //     await LoginPage.open();
+    //     await LandingPage.lnkAdmin.click();
+    //     await UserManagement.btnAdd.click();
+    //     await expect(UserManagementAddUser.lblAddUser).toBeDisplayed();
+    //     await UserManagementAddUser.selectAdminFromDropDown();
+    //     await UserManagementAddUser.txtEmployeeName.setValue('A');//Pass value using tab
+    //     await browser.pause(3000);
+    //     await browser.keys('Tab');
+    //     await UserManagementAddUser.txtUsername.setValue('autAdminDisabled01');
+    //     await UserManagementAddUser.selectDisabledFromDropDown();
+    //     UserManagementAddUser.txtPassword.setValue('test12345');
+    //     UserManagementAddUser.txtConfirmPassword.setValue('test12345');
+    //     await browser.pause(5000);
+    //     UserManagementAddUser.btnSave.click();
+    //     await browser.pause(5000);
+    //     expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
+    // });
 
     it('Verify the Admin can delete a user', async()=>{
         await LoginPage.open();
         await LandingPage.lnkAdmin.click();
-        await UserManagement.btnAdd.click();
-        await UserManagement.searchUserByEmployeeName('autESSEnabled01');
-        
+        // await UserManagement.btnAdd.click();
+        // await UserManagement.searchUserByEmployeeName('autESSEnabled01');
+        let keyword = 'autAdminDisabled01';
+        await UserManagement.searchUserByEmployeeName(keyword);
+        console.log("=============>",await UserManagement.lblCellUsername.getText(), keyword);
+        await expect(await UserManagement.lblCellUsername.getText()).toBe(keyword);
+        // console.log("=============>",await UserManagement.lblCellUsername.getText());
+        await UserManagement.chkFirstCheckbox.click();
+        // await UserManagement.btnDelete.click();
+
     });
 });
