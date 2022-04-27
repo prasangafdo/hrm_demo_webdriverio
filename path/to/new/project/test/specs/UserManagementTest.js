@@ -117,13 +117,15 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         await LandingPage.lnkAdmin.click();
         // await UserManagement.btnAdd.click();
         // await UserManagement.searchUserByEmployeeName('autESSEnabled01');
-        let keyword = 'autAdminDisabled01';
+        // let keyword = 'autAdminDisabled01';
+        let keyword = 'dilshad';
         await UserManagement.searchUserByEmployeeName(keyword);
-        console.log("=============>",await UserManagement.lblCellUsername.getText(), keyword);
-        await expect(await UserManagement.lblCellUsername.getText()).toBe(keyword);
+        // console.log("=============>",await UserManagement.lblCellUsername.getText(), keyword);
+        await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
+        // await expect(await UserManagement.lblCellUsername.getText()).toHaveTextContaining(keyword);
         // console.log("=============>",await UserManagement.lblCellUsername.getText());
         await UserManagement.chkFirstCheckbox.click();
-        // await UserManagement.btnDelete.click();
-
+        await UserManagement.btnDelete.click();
+//Add a verification point
     });
 });

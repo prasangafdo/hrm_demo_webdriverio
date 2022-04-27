@@ -19,18 +19,21 @@ class UserManagementPage extends Page{
         return $('#btnAdd');
     }
     get lblCellUsername(){
-        return $('((//tr[@class="odd"])[1]/td[@class="left"])[1]');
+        return $('((//tr[@class="odd"])[1]/td[@class="left"])[1]/a');
     }
     get chkFirstCheckbox(){
         return $("(//tbody//input[@type='checkbox'])[1]");
     }
     get btnDelete(){
-        return $('.btnDelete');
+        return $('#btnDelete');
     }
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
         await this.btnSearch.click();
+    }
+    async isUsernameDisplayingProperly(keyword){
+        return await this.lblCellUsername.getText() === keyword;
     }
 
 }
