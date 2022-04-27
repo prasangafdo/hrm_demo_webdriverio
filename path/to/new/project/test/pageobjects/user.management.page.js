@@ -27,6 +27,10 @@ class UserManagementPage extends Page{
     get btnDelete(){
         return $('#btnDelete');
     }
+    get lblDeletePopupMessage(){
+        return $("//div[@class='modal-body']//p[text()='Delete records?']");
+    }
+
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
