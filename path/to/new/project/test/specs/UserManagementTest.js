@@ -126,6 +126,8 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         // console.log("=============>",await UserManagement.lblCellUsername.getText());
         await UserManagement.chkFirstCheckbox.click();
         await UserManagement.btnDelete.click();
+        await expect(UserManagement.lblDeletePopupMessage).toBeDisplayed();
+        await browser.pause(2000);
 //Add a verification point
     });
 });
