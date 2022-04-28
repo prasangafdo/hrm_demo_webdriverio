@@ -30,6 +30,9 @@ class UserManagementPage extends Page{
     get lblDeletePopupMessage(){
         return $("//div[@class='modal-body']//p[text()='Delete records?']");
     }
+    get btnDeleteOKPopup(){
+        return $('#dialogDeleteBtn');
+    }
 
 
     async searchUserByEmployeeName(keyword){
