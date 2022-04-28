@@ -33,6 +33,9 @@ class UserManagementPage extends Page{
     get btnDeleteOKPopup(){
         return $('#dialogDeleteBtn');
     }
+    get lblDeleteSuccessfulMessage(){
+        return $("//div[@class='message success fadable']");
+    }
 
 
     async searchUserByEmployeeName(keyword){

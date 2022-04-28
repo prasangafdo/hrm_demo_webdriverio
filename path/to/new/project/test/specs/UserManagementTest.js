@@ -128,6 +128,7 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         await UserManagement.btnDelete.click();
         await expect(UserManagement.lblDeletePopupMessage).toBeDisplayed();
         await UserManagement.btnDeleteOKPopup.click();
+        await expect(UserManagement.lblDeleteSuccessfulMessage).toHaveTextContaining('Successfully Deleted');
         await browser.pause(2000);
 //Add a verification point
     });
