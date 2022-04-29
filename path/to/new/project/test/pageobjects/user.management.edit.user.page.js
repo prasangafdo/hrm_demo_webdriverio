@@ -1,35 +1,13 @@
 const Page = require('./page');
 
 
-class UserManagementAddUserPage extends Page{
+class UserManagementEditUserPage extends Page{
 
-//     get lblAddUser(){
-//         return $("//h1[@id='UserHeading' and text()='Add User']");
-//     }
-//     get txtEmployeeName(){
-//         return $('#systemUser_employeeName_empName');
-//     }
-//     get txtUsername(){
-//         return $('#systemUser_userName');
-//     }
-//     get txtPassword(){
-//         return $('#systemUser_password');
-//     }
-//     get txtConfirmPassword(){
-//         return $('#systemUser_confirmPassword');
-//     }
-//     get btnSave(){
-//         return $('#btnSave'); //Using id locator
-//     }
-//     get drpDwnUserRole(){
-//         return $('#systemUser_userType');
-//     }
-//     get lblSaveSuccessMessage(){
-//         return $("//div[@class='message success fadable']");
-//     }
-//     get drpDwnStatus(){
-//         return $('#systemUser_status');
-//     }
+    get lnkUser(){
+    return $('//td/a');
+    }
+
+}
 //
 //     async selectAdminFromDropDown(){
 //         console.log('------------------------------------',await this.drpDwnUserRole.getValue())
@@ -45,4 +23,4 @@ class UserManagementAddUserPage extends Page{
 
 //td[@class='left']/a
 
-module.exports = new UserManagementAddUserPage()
+module.exports = new UserManagementEditUserPage()

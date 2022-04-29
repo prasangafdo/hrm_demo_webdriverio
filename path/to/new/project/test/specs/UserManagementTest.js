@@ -2,6 +2,7 @@ const LoginPage = require('../pageobjects/login.page');
 const LandingPage = require('../pageobjects/landing.page');
 const UserManagement = require('../pageobjects/user.management.page')
 const UserManagementAddUser = require('../pageobjects/user.management.add.user.page');
+const UserManagementEditUser = require('../pageobjects/user.management.edit.user.page')
 
 describe('HRM Demo application - Verify User Management Screen', () => {//Scenario name comes here
     it('Verify the admin can navigate to User Management page', async () => {
@@ -111,31 +112,33 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     await browser.pause(5000);
     //     expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
     // });
-//td/a
-    it('Verify the Admin can delete a user', async()=>{
-        await LoginPage.open();
-        await LandingPage.lnkAdmin.click();
-        // await UserManagement.btnAdd.click();
-        // await UserManagement.searchUserByEmployeeName('autESSEnabled01');
-        // let keyword = 'autAdminDisabled01';
-        let keyword = 'dilshad';
-        await UserManagement.searchUserByEmployeeName(keyword);
-        // console.log("=============>",await UserManagement.lblCellUsername.getText(), keyword);
-        await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
-        // await expect(await UserManagement.lblCellUsername.getText()).toHaveTextContaining(keyword);
-        // console.log("=============>",await UserManagement.lblCellUsername.getText());
-        await UserManagement.chkFirstCheckbox.click();
-        await UserManagement.btnDelete.click();
-        await expect(UserManagement.lblDeletePopupMessage).toBeDisplayed();
-        await UserManagement.btnDeleteOKPopup.click();
-        await expect(UserManagement.lblDeleteSuccessfulMessage).toHaveTextContaining('Successfully Deleted');
-        await browser.pause(2000);
-    });
+
+    // it('Verify the Admin can delete a user', async()=>{
+    //     await LoginPage.open();
+    //     await LandingPage.lnkAdmin.click();
+    //     // await UserManagement.btnAdd.click();
+    //     // await UserManagement.searchUserByEmployeeName('autESSEnabled01');
+    //     // let keyword = 'autAdminDisabled01';
+    //     let keyword = 'dilshad';
+    //     await UserManagement.searchUserByEmployeeName(keyword);
+    //     // console.log("=============>",await UserManagement.lblCellUsername.getText(), keyword);
+    //     await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
+    //     // await expect(await UserManagement.lblCellUsername.getText()).toHaveTextContaining(keyword);
+    //     // console.log("=============>",await UserManagement.lblCellUsername.getText());
+    //     await UserManagement.chkFirstCheckbox.click();
+    //     await UserManagement.btnDelete.click();
+    //     await expect(UserManagement.lblDeletePopupMessage).toBeDisplayed();
+    //     await UserManagement.btnDeleteOKPopup.click();
+    //     await expect(UserManagement.lblDeleteSuccessfulMessage).toHaveTextContaining('Successfully Deleted');
+    //     await browser.pause(2000);
+    // });
 
     it('Verify the Admin can edit a user', async ()=>{
         let keyword = 'dilshad';
         await UserManagement.searchUserByEmployeeName(keyword);
         await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
+        await UserManagementEditUser.lnkUser.click();
+        await browser.pause(3000)
 
     });
 });
