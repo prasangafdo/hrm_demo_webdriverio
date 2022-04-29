@@ -111,7 +111,7 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     await browser.pause(5000);
     //     expect(UserManagementAddUser.lblSaveSuccessMessage).toHaveText('Successfully Saved');
     // });
-
+//td/a
     it('Verify the Admin can delete a user', async()=>{
         await LoginPage.open();
         await LandingPage.lnkAdmin.click();
@@ -133,6 +133,9 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     });
 
     it('Verify the Admin can edit a user', async ()=>{
+        let keyword = 'dilshad';
+        await UserManagement.searchUserByEmployeeName(keyword);
+        await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
 
     });
 });
