@@ -6,6 +6,21 @@ class UserManagementEditUserPage extends Page{
     get lnkUser(){
     return $('//td/a');
     }
+    get btnEdit(){
+        return $("//input[@value='Edit']");
+    }
+    get txtUsername(){
+        return $('#systemUser_userName');
+    }
+    get btnSave(){
+        return $('#btnSave'); //Using id locator
+    }
+    get drpDwnUserRole(){
+        return $('#systemUser_userType');
+    }
+    get lblUpdateSuccessfulMessage(){
+        return $("//div[@class='message success fadable']");
+    }
 
 }
 //

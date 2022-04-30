@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1651223026712' stop='1651223037620'>
+    <name>HRM Demo application - Verify User Management Screen</name>
+    <title>HRM Demo application - Verify User Management Screen</title>
+    <test-cases>
+        <test-case start='1651223026712' status='broken' stop='1651223027563'>
+            <name>Verify the admin can navigate to User Management page</name>
+            <title>Verify the admin can navigate to User Management page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_NAME_NOT_RESOLVED
+                  (Session info: chrome=100.0.4896.127)</message>
+                <stack-trace>unknown error: unknown error: net::ERR_NAME_NOT_RESOLVED
+                  (Session info: chrome=100.0.4896.127)
+                    at getErrorFromResponseBody (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriver\build\utils.js:197:12)
+                    at NodeJSRequest._request (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriver\build\request\index.js:158:60)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at async Browser.wrapCommandFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.wrapCommandFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\specs\UserManagementTest.js:9:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1651223027563' status='broken' stop='1651223037619'>
+            <name>Verify the Admin can edit a user</name>
+            <title>Verify the Admin can edit a user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call setValue on element with selector "#searchSystemUser_userName" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "#searchSystemUser_userName" because element wasn't found
+                    at implicitWait (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async UserManagementPage.searchUserByEmployeeName (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\pageobjects\user.management.page.js:42:9)
+                    at async Context.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\specs\UserManagementTest.js:138:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

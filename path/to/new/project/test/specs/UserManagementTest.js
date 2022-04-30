@@ -133,11 +133,16 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     await browser.pause(2000);
     // });
 
-    it('Verify the Admin can edit a user', async ()=>{
+    it('Verify the Admin can edit a username of an employee', async ()=>{
         let keyword = 'dilshad';
         await UserManagement.searchUserByEmployeeName(keyword);
         await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
         await UserManagementEditUser.lnkUser.click();
+        await UserManagementEditUser.btnEdit.click();
+        await UserManagementEditUser.txtUsername.setValue('Username Updated');
+        await browser.pause(3000);
+        await UserManagementEditUser.btnSave.click();
+        await expect(UserManagementEditUser.lblUpdateSuccessfulMessage).toHaveTextContaining('Successfully Updated');
         await browser.pause(3000)
 
     });
