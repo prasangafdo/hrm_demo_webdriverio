@@ -147,7 +147,11 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
 
     });
 
-    it('Verify the Admin can edit user role of an employee', async ()=>{
-
+    it('Verify the Admin can edit user role of an employee from ESS to Admin', async ()=>{
+        await UserManagement.searchUserByEmployeeName(keyword);
+        await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
+        await UserManagementEditUser.lnkUser.click();
+        await UserManagementEditUser.btnEdit.click();
+        await UserManagementEditUser.selectAdminFromDropDown();
     });
 });
