@@ -146,4 +146,8 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         await browser.pause(3000)
 
     });
+
+    it('Verify the Admin can edit user role of an employee', async ()=>{
+
+    });
 });
