@@ -154,4 +154,8 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         await UserManagementEditUser.btnEdit.click();
         await UserManagementEditUser.selectAdminFromDropDown();
     });
+
+    it('Verify the Admin can search ESS users', async ()=>{
+
+    });
 });
