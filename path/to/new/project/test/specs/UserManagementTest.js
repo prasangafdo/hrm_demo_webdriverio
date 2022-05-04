@@ -133,29 +133,32 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     await browser.pause(2000);
     // });
 
-    it('Verify the Admin can edit a username of an employee', async ()=>{
-        let keyword = 'dilshad';
-        await UserManagement.searchUserByEmployeeName(keyword);
-        await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
-        await UserManagementEditUser.lnkUser.click();
-        await UserManagementEditUser.btnEdit.click();
-        await UserManagementEditUser.txtUsername.setValue('Username Updated');
-        await browser.pause(3000);
-        await UserManagementEditUser.btnSave.click();
-        await expect(UserManagementEditUser.lblUpdateSuccessfulMessage).toHaveTextContaining('Successfully Updated');
-        await browser.pause(3000)
-
-    });
-
-    it('Verify the Admin can edit user role of an employee from ESS to Admin', async ()=>{
-        await UserManagement.searchUserByEmployeeName(keyword);
-        await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
-        await UserManagementEditUser.lnkUser.click();
-        await UserManagementEditUser.btnEdit.click();
-        await UserManagementEditUser.selectAdminFromDropDown();
-    });
+    // it('Verify the Admin can edit a username of an employee', async ()=>{
+    //     let keyword = 'dilshad';
+    //     await UserManagement.searchUserByEmployeeName(keyword);
+    //     await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
+    //     await UserManagementEditUser.lnkUser.click();
+    //     await UserManagementEditUser.btnEdit.click();
+    //     await UserManagementEditUser.txtUsername.setValue('Username Updated');
+    //     await browser.pause(3000);
+    //     await UserManagementEditUser.btnSave.click();
+    //     await expect(UserManagementEditUser.lblUpdateSuccessfulMessage).toHaveTextContaining('Successfully Updated');
+    //     await browser.pause(3000)
+    //
+    // });
+    //
+    // it('Verify the Admin can edit user role of an employee from ESS to Admin', async ()=>{
+    //     await UserManagement.searchUserByEmployeeName(keyword);
+    //     await expect(UserManagement.isUsernameDisplayingProperly()).toBeTruthy();
+    //     await UserManagementEditUser.lnkUser.click();
+    //     await UserManagementEditUser.btnEdit.click();
+    //     await UserManagementEditUser.selectAdminFromDropDown();
+    // });
 
     it('Verify the Admin can search ESS users', async ()=>{
+        await LandingPage.lnkAdmin.click();
+        await UserManagement.selectAdminFromDropDown();
+        await browser.pause(3000)
 
     });
 });

@@ -36,7 +36,9 @@ class UserManagementPage extends Page{
     get lblDeleteSuccessfulMessage(){
         return $("//div[@class='message success fadable']");
     }
-
+    get drpDwnUserRole(){
+        return $('#searchSystemUser_userType');
+    }
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
@@ -45,6 +47,12 @@ class UserManagementPage extends Page{
     async isUsernameDisplayingProperly(keyword){
         return await this.lblCellUsername.getText() === keyword;
     }
+    async selectAdminFromDropDown(){
+        console.log('------------------------------------',await this.drpDwnUserRole.getValue())
+        await this.drpDwnUserRole.selectByAttribute('value','1'); //1 = Admin
+        console.log('------------------------------------',await this.drpDwnUserRole.getValue())
+    }
+
 
 }
 
