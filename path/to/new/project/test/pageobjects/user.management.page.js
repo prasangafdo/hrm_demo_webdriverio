@@ -39,7 +39,9 @@ class UserManagementPage extends Page{
     get drpDwnUserRole(){
         return $('#searchSystemUser_userType');
     }
-
+    get lblFirstRowSearchData(){
+        return $("(//table[@id='resultTable']//tbody/tr)[1]");
+    }
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);

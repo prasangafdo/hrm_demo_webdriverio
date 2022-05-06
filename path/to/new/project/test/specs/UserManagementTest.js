@@ -160,6 +160,7 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         await UserManagement.selectESSFromDropDown();
         await UserManagement.btnSearch.click();
         await browser.pause(3000)
-
+        console.log('============>',await UserManagement.lblFirstRowSearchData.getText());
+        expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('ESS')
     });
 });
