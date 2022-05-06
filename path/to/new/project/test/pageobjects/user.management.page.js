@@ -40,6 +40,7 @@ class UserManagementPage extends Page{
         return $('#searchSystemUser_userType');
     }
 
+
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
         await this.btnSearch.click();
@@ -52,7 +53,11 @@ class UserManagementPage extends Page{
         await this.drpDwnUserRole.selectByAttribute('value','1'); //1 = Admin
         console.log('------------------------------------',await this.drpDwnUserRole.getValue())
     }
-
+    async selectESSFromDropDown(){
+        console.log('------------------------------------',await this.drpDwnUserRole.getValue())
+        await this.drpDwnUserRole.selectByAttribute('value','2'); //2 = ESS
+        console.log('------------------------------------',await this.drpDwnUserRole.getValue())
+    }
 
 }
 

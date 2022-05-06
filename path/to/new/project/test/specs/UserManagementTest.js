@@ -157,7 +157,8 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
 
     it('Verify the Admin can search ESS users', async ()=>{
         await LandingPage.lnkAdmin.click();
-        await UserManagement.selectAdminFromDropDown();
+        await UserManagement.selectESSFromDropDown();
+        await UserManagement.btnSearch.click();
         await browser.pause(3000)
 
     });
