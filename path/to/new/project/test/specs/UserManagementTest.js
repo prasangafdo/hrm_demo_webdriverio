@@ -155,12 +155,21 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     await UserManagementEditUser.selectAdminFromDropDown();
     // });
 
-    it('Verify the Admin can search ESS users', async ()=>{
+    // it('Verify the Admin can search ESS users', async ()=>{
+    //     await LandingPage.lnkAdmin.click();
+    //     await UserManagement.selectESSFromDropDown();
+    //     await UserManagement.btnSearch.click();
+    //     await browser.pause(3000)
+    //     console.log('============>',await UserManagement.lblFirstRowSearchData.getText());
+    //     expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('ESS')
+    // });
+
+    it('Verify the Admin can search Admin users', async ()=>{
         await LandingPage.lnkAdmin.click();
-        await UserManagement.selectESSFromDropDown();
+        await UserManagement.selectAdminFromDropDown();
         await UserManagement.btnSearch.click();
         await browser.pause(3000)
         console.log('============>',await UserManagement.lblFirstRowSearchData.getText());
-        expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('ESS')
+        expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('Admin')
     });
 });
