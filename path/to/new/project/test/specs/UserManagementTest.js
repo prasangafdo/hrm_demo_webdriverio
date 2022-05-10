@@ -155,6 +155,8 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     await UserManagementEditUser.selectAdminFromDropDown();
     // });
 
+    //Verify the Admin can disable a user
+
     // it('Verify the Admin can search ESS users', async ()=>{
     //     await LandingPage.lnkAdmin.click();
     //     await UserManagement.selectESSFromDropDown();
@@ -164,12 +166,16 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('ESS')
     // });
 
-    it('Verify the Admin can search Admin users', async ()=>{
+    // it('Verify the Admin can search Admin users', async ()=>{
+    //     await LandingPage.lnkAdmin.click();
+    //     await UserManagement.selectAdminFromDropDown();
+    //     await UserManagement.btnSearch.click();
+    //     await browser.pause(3000)
+    //     console.log('============>',await UserManagement.lblFirstRowSearchData.getText());
+    //     expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('Admin')
+    // });
+
+    it('Verify the Admin can search Disabled users', async()=>{
         await LandingPage.lnkAdmin.click();
-        await UserManagement.selectAdminFromDropDown();
-        await UserManagement.btnSearch.click();
-        await browser.pause(3000)
-        console.log('============>',await UserManagement.lblFirstRowSearchData.getText());
-        expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('Admin')
     });
 });

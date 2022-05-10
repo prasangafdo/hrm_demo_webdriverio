@@ -42,6 +42,9 @@ class UserManagementPage extends Page{
     get lblFirstRowSearchData(){
         return $("(//table[@id='resultTable']//tbody/tr)[1]");
     }
+    get drpDwnStatus(){
+        return $('#searchSystemUser_status');
+    }
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
@@ -59,6 +62,9 @@ class UserManagementPage extends Page{
         console.log('------------------------------------',await this.drpDwnUserRole.getValue())
         await this.drpDwnUserRole.selectByAttribute('value','2'); //2 = ESS
         console.log('------------------------------------',await this.drpDwnUserRole.getValue())
+    }
+    async selectDisabledFromDropDown(){
+
     }
 
 }
