@@ -179,6 +179,7 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         await LandingPage.lnkAdmin.click();
         await UserManagement.selectDisabledFromDropDown();
         await UserManagement.btnSearch.click();
-        await browser.pause(5000);
+        expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('Disabled');
+        // await browser.pause(5000);
     });
 });
