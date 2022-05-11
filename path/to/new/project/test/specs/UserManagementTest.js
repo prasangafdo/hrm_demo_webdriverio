@@ -177,5 +177,8 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
 
     it('Verify the Admin can search Disabled users', async()=>{
         await LandingPage.lnkAdmin.click();
+        await UserManagement.selectDisabledFromDropDown();
+        await UserManagement.btnSearch.click();
+        await browser.pause(5000);
     });
 });

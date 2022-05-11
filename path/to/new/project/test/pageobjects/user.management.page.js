@@ -64,7 +64,8 @@ class UserManagementPage extends Page{
         console.log('------------------------------------',await this.drpDwnUserRole.getValue())
     }
     async selectDisabledFromDropDown(){
-
+        await this.drpDwnStatus.selectByAttribute('value', 0);//0 = Disabled
+        console.log('------------------------------------',await this.drpDwnStatus.getValue())
     }
 
 }
