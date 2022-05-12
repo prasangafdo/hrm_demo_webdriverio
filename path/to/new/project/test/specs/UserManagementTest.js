@@ -182,4 +182,12 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('Disabled');
         // await browser.pause(5000);
     });
+    it('Verify the Admin can search Enabled users', async()=>{
+        await LandingPage.lnkAdmin.click();
+        await UserManagement.selectEnabledFromDropDown();
+        await UserManagement.btnSearch.click();
+        expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('Enabled');
+        // await browser.pause(5000);
+    });
+    //Search enabled users
 });

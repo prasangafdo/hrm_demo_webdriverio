@@ -67,6 +67,10 @@ class UserManagementPage extends Page{
         await this.drpDwnStatus.selectByAttribute('value', 0);//0 = Disabled
         console.log('------------------------------------',await this.drpDwnStatus.getValue())
     }
+    async selectEnabledFromDropDown(){
+        await this.drpDwnStatus.selectByAttribute('value', 1);
+        console.log('------------------------------------',await this.drpDwnStatus.getValue())
+    }
 
 }
 
