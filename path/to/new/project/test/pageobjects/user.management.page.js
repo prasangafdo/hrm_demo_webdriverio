@@ -48,6 +48,9 @@ class UserManagementPage extends Page{
     get lblUsernameColumnHeader(){
         return $("//a[text()='Username']/parent::th");
     }
+    get lblUsernameColumnValues(){
+        return $$("//a[contains(@href, 'saveSystemUser?userId=')]");
+    }
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
@@ -73,6 +76,9 @@ class UserManagementPage extends Page{
     async selectEnabledFromDropDown(){
         await this.drpDwnStatus.selectByAttribute('value', 1);
         console.log('------------------------------------',await this.drpDwnStatus.getValue())
+    }
+    async sortUsernameInAscendingOrder(){
+
     }
 
 }
