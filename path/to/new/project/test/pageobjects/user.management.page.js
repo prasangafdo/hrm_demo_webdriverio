@@ -45,6 +45,9 @@ class UserManagementPage extends Page{
     get drpDwnStatus(){
         return $('#searchSystemUser_status');
     }
+    get lblUsernameColumnHeader(){
+        return $("//a[text()='Username']/parent::th");
+    }
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
