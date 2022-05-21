@@ -78,6 +78,25 @@ class UserManagementPage extends Page{
         console.log('------------------------------------',await this.drpDwnStatus.getValue())
     }
     async sortUsernameInAscendingOrder(){
+        let gatheredValues = [];
+
+
+        let userNameColumnValues1 = await this.lblUsernameColumnValues;
+        for (let item of userNameColumnValues1){
+            gatheredValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+
+        // await this.lblUsernameColumnHeader.click();
+        // let userNameColumnValues2 = await this.lblUsernameColumnValues;
+        // for (let item of userNameColumnValues2){
+        //     sortedValues.push(await item.getText());
+        //     // console.log(await item.getText());
+        // }
+        let sortedValues = gatheredValues.sort();
+        // sortedValues.reverse();
+        console.log(gatheredValues)
+        console.log(sortedValues)
 
     }
 

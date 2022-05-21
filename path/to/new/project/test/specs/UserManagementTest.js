@@ -191,10 +191,8 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     // });
     it('Verify the Admin can sort table data in ascending order', async ()=>{
         await LandingPage.lnkAdmin.click();
-        await UserManagement.lblUsernameColumnHeader.click();
-        await browser.pause(5000);
-        await UserManagement.lblUsernameColumnHeader.click();
         await browser.pause(5000);//Sort asc desc
+        await UserManagement.sortUsernameInAscendingOrder();
     });
 
 });

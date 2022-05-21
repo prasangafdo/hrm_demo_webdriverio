@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653141625287' stop='1653141691236'>
+    <name>HRM Demo application - Verify User Management Screen</name>
+    <title>HRM Demo application - Verify User Management Screen</title>
+    <test-cases>
+        <test-case start='1653141625287' status='passed' stop='1653141636973'>
+            <name>Verify the admin can navigate to User Management page</name>
+            <title>Verify the admin can navigate to User Management page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1653141636974' status='broken' stop='1653141691217'>
+            <name>Verify the Admin can sort table data in ascending order</name>
+            <title>Verify the Admin can sort table data in ascending order</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>write ECONNRESET</message>
+                <stack-trace>RequestError: write ECONNRESET
+                    at ClientRequest.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\got\dist\source\core\index.js:956:111)
+                    at Object.onceWrapper (events.js:520:26)
+                    at ClientRequest.emit (events.js:412:35)
+                    at ClientRequest.emit (domain.js:475:12)
+                    at ClientRequest.origin.emit (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+                    at Socket.socketErrorListener (_http_client.js:475:9)
+                    at Socket.emit (events.js:400:28)
+                    at Socket.emit (domain.js:475:12)
+                    at emitErrorNT (internal/streams/destroy.js:106:8)
+                    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+                    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+                    at writeGeneric (internal/stream_base_commons.js:147:3)
+                    at Socket._writeGeneric (net.js:798:11)
+                    at Socket._write (net.js:810:8)
+                    at doWrite (internal/streams/writable.js:377:12)
+                    at clearBuffer (internal/streams/writable.js:529:7)
+                    at Socket.Writable.uncork (internal/streams/writable.js:317:7)
+                    at ClientRequest.end (_http_outgoing.js:855:17)
+                    at endRequest (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\got\dist\source\core\index.js:1342:28)
+                    at Request._final (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\got\dist\source\core\index.js:1352:13)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
