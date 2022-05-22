@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653200819075' stop='1653200838301'>
+    <name>HRM Demo application - Verify User Management Screen</name>
+    <title>HRM Demo application - Verify User Management Screen</title>
+    <test-cases>
+        <test-case start='1653200819075' status='passed' stop='1653200830462'>
+            <name>Verify the admin can navigate to User Management page</name>
+            <title>Verify the admin can navigate to User Management page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1653200830463' status='broken' stop='1653200838299'>
+            <name>Verify the Admin can sort table data in ascending order</name>
+            <title>Verify the Admin can sort table data in ascending order</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>sortedValues is not defined</message>
+                <stack-trace>ReferenceError: sortedValues is not defined
+                    at UserManagementPage.sortUsernameInAscendingOrder (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\pageobjects\user.management.page.js:92:13)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at async Context.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\specs\UserManagementTest.js:195:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

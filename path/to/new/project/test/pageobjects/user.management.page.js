@@ -79,7 +79,7 @@ class UserManagementPage extends Page{
     }
     async sortUsernameInAscendingOrder(){
         let gatheredValues = [];
-
+        let sortedValues = []; //This will contain already sorted values by front end
 
         let userNameColumnValues1 = await this.lblUsernameColumnValues;
         for (let item of userNameColumnValues1){
@@ -87,19 +87,17 @@ class UserManagementPage extends Page{
             // console.log(await item.getText());
         }
 
-        // await this.lblUsernameColumnHeader.click();
-        // let userNameColumnValues2 = await this.lblUsernameColumnValues;
-        // for (let item of userNameColumnValues2){
-        //     sortedValues.push(await item.getText());
-        //     // console.log(await item.getText());
-        // }
+        await this.lblUsernameColumnHeader.click();
+        let userNameColumnValues2 = await this.lblUsernameColumnValues;
+        for (let item of userNameColumnValues2){
+            sortedValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
         console.log(gatheredValues)
-        // let sortedValues = gatheredValues.sort();
-        // sortedValues.reverse();
-        let sortedValues = gatheredValues.sort(function (a, b) {
+        gatheredValues.sort(function (a, b) {
             return a.toLowerCase().localeCompare(b.toLowerCase()); //Sorting in case insensitive manner
         });
-        console.log(sortedValues)
+        console.log(gatheredValues)
 
     }
 
