@@ -98,7 +98,7 @@ class UserManagementPage extends Page{
             return a.toLowerCase().localeCompare(b.toLowerCase()); //Sorting in case insensitive manner
         });
         console.log(gatheredValues)
-
+        return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
     }
 
 }
