@@ -93,9 +93,12 @@ class UserManagementPage extends Page{
         //     sortedValues.push(await item.getText());
         //     // console.log(await item.getText());
         // }
-        let sortedValues = gatheredValues.sort();
-        // sortedValues.reverse();
         console.log(gatheredValues)
+        // let sortedValues = gatheredValues.sort();
+        // sortedValues.reverse();
+        let sortedValues = gatheredValues.sort(function (a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase()); //Sorting in case insensitive manner
+        });
         console.log(sortedValues)
 
     }

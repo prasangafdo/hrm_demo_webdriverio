@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653199739265' stop='1653199750089'>
+    <name>HRM Demo application - Verify User Management Screen</name>
+    <title>HRM Demo application - Verify User Management Screen</title>
+    <test-cases>
+        <test-case start='1653199739265' status='broken' stop='1653199740038'>
+            <name>Verify the admin can navigate to User Management page</name>
+            <title>Verify the admin can navigate to User Management page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=101.0.4951.67)</message>
+                <stack-trace>unknown error: unknown error: net::ERR_INTERNET_DISCONNECTED
+                  (Session info: chrome=101.0.4951.67)
+                    at getErrorFromResponseBody (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriver\build\utils.js:197:12)
+                    at NodeJSRequest._request (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriver\build\request\index.js:158:60)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at async Browser.wrapCommandFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.wrapCommandFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\specs\UserManagementTest.js:9:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1653199740039' status='broken' stop='1653199750088'>
+            <name>Verify the Admin can sort table data in ascending order</name>
+            <title>Verify the Admin can sort table data in ascending order</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "//a[@id='menu_admin_viewAdminModule']" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//a[@id='menu_admin_viewAdminModule']" because element wasn't found
+                    at implicitWait (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\specs\UserManagementTest.js:193:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
