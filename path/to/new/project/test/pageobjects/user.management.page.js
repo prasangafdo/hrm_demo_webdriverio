@@ -51,6 +51,10 @@ class UserManagementPage extends Page{
     get lblUsernameColumnValues(){
         return $$("//a[contains(@href, 'saveSystemUser?userId=')]");
     }
+    get lblUserRoleColumnValues(){
+        return $$("//tr/td[3]");
+    }
+
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
