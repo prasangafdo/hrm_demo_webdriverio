@@ -193,6 +193,9 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         await LandingPage.lnkAdmin.click();
         await browser.pause(5000);//Sort asc desc
         expect(await UserManagement.sortUsernameInAscendingOrder()).toBeTruthy();
+        expect(await UserManagement.sortUserRoleInAscendingOrder()).toBeTruthy();
+
+
     });
 
 });

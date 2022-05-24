@@ -54,7 +54,9 @@ class UserManagementPage extends Page{
     get lblUserRoleColumnValues(){
         return $$("//tr/td[3]");
     }
-
+    get lblUserRoleColumnHeader(){
+        return $("//a[text()='User Role']/parent::th");
+    }
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
@@ -94,6 +96,29 @@ class UserManagementPage extends Page{
         await this.lblUsernameColumnHeader.click();
         let userNameColumnValues2 = await this.lblUsernameColumnValues;
         for (let item of userNameColumnValues2){
+            sortedValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+        console.log(gatheredValues)
+        gatheredValues.sort(function (a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase()); //Sorting in case insensitive manner
+        });
+        console.log(gatheredValues)
+        return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
+    }
+    async sortUserRoleInAscendingOrder(){
+        let gatheredValues = [];
+        let sortedValues = []; //This will contain already sorted values by front end
+
+        let userRoleColumnValues1 = await this.lblUserRoleColumnValues;
+        for (let item of userRoleColumnValues1){
+            gatheredValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+
+        await this.lblUserRoleColumnHeader.click();
+        let userRoleColumnValues2 = await this.lblUserRoleColumnValues;
+        for (let item of userRoleColumnValues2){
             sortedValues.push(await item.getText());
             // console.log(await item.getText());
         }
