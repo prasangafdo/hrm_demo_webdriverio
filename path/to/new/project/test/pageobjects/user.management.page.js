@@ -57,6 +57,12 @@ class UserManagementPage extends Page{
     get lblUserRoleColumnHeader(){
         return $("//a[text()='User Role']/parent::th");
     }
+    get lblEmployeeNameColumnValues(){
+        return $$("//tr/td[4]");
+    }
+    get lblEmployeeNameColumnHeader(){
+        return $("//a[text()='Employee Name']/parent::th");
+    }
 
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
@@ -128,6 +134,9 @@ class UserManagementPage extends Page{
         });
         console.log(gatheredValues)
         return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
+    }
+    async sortEmployeeNameInAscendingOrder(){
+
     }
 
 }
