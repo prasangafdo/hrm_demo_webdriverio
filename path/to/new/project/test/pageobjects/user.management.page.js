@@ -63,7 +63,12 @@ class UserManagementPage extends Page{
     get lblEmployeeNameColumnHeader(){
         return $("//a[text()='Employee Name']/parent::th");
     }
-
+    get lblStatusColumnValues(){
+        return $$("//tr/td[5]");
+    }
+    get lblStatusColumnHeader(){
+        return $("//a[text()='Status']/parent::th");
+    }
     async searchUserByEmployeeName(keyword){
         await this.txtUsername.setValue(keyword);
         await this.btnSearch.click();
@@ -136,7 +141,27 @@ class UserManagementPage extends Page{
         return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
     }
     async sortEmployeeNameInAscendingOrder(){
+        let gatheredValues = [];
+        let sortedValues = []; //This will contain already sorted values by front end
 
+        let userRoleColumnValues1 = await this.lblEmployeeNameColumnValues;
+        for (let item of userRoleColumnValues1){
+            gatheredValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+
+        await this.lblEmployeeNameColumnHeader.click();
+        let userRoleColumnValues2 = await this.lblEmployeeNameColumnValues;
+        for (let item of userRoleColumnValues2){
+            sortedValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+        console.log(gatheredValues)
+        gatheredValues.sort(function (a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase()); //Sorting in case insensitive manner
+        });
+        console.log(gatheredValues)
+        return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
     }
 
 }

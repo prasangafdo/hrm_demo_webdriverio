@@ -194,6 +194,7 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         await browser.pause(5000);//Sort asc desc
         expect(await UserManagement.sortUsernameInAscendingOrder()).toBeTruthy();
         expect(await UserManagement.sortUserRoleInAscendingOrder()).toBeTruthy();
+        expect(await UserManagement.sortEmployeeNameInAscendingOrder()).toBeTruthy();
 
 
     });
