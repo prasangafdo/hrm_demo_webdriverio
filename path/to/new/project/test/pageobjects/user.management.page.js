@@ -163,6 +163,30 @@ class UserManagementPage extends Page{
         console.log(gatheredValues)
         return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
     }
+    async sortStatusInAscendingOrder(){
+        let gatheredValues = [];
+        let sortedValues = []; //This will contain already sorted values by front end
+
+        let userRoleColumnValues1 = await this.lblStatusColumnValues;
+        for (let item of userRoleColumnValues1){
+            gatheredValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+
+        await this.lblStatusColumnHeader.click();
+        let userRoleColumnValues2 = await this.lblStatusColumnValues;
+        for (let item of userRoleColumnValues2){
+            sortedValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+        console.log(gatheredValues)
+        gatheredValues.sort(function (a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase()); //Sorting in case insensitive manner
+        });
+        console.log(gatheredValues)
+        return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
+    }
+
 
 }
 
