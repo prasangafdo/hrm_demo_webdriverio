@@ -195,6 +195,7 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         expect(await UserManagement.sortUsernameInAscendingOrder()).toBeTruthy();
         expect(await UserManagement.sortUserRoleInAscendingOrder()).toBeTruthy();
         expect(await UserManagement.sortEmployeeNameInAscendingOrder()).toBeTruthy();
+        expect(await UserManagement.sortStatusInAscendingOrder()).toBeTruthy();
 
 
     });

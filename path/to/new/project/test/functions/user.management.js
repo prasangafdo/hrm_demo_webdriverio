@@ -11,6 +11,10 @@ class UserManagement {
     async sortEmployeeNameInAscendingOrder(){
         return await userManagementPage.sortEmployeeNameInAscendingOrder();
     }
+    async sortStatusInAscendingOrder(){
+        return await userManagementPage.sortStatusInAscendingOrder();
+    }
+
 
 }
 
