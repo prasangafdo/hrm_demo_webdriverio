@@ -186,7 +186,98 @@ class UserManagementPage extends Page{
         console.log(gatheredValues)
         return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
     }
+    async sortUsernameInDescendingOrder(){
+        let gatheredValues = [];
+        let sortedValues = []; //This will contain already sorted values by front end
 
+        let userNameColumnValues1 = await this.lblUsernameColumnValues;
+        for (let item of userNameColumnValues1){
+            gatheredValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+
+        await this.lblUsernameColumnHeader.click();
+        let userNameColumnValues2 = await this.lblUsernameColumnValues;
+        for (let item of userNameColumnValues2){
+            sortedValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+        console.log(gatheredValues)
+        gatheredValues.sort(function (a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase()); //Sorting in case insensitive manner
+        }).reverse();
+        console.log(gatheredValues)
+        return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
+    }
+    async sortUserRoleInDescendingOrder(){
+        let gatheredValues = [];
+        let sortedValues = []; //This will contain already sorted values by front end
+
+        let userRoleColumnValues1 = await this.lblUserRoleColumnValues;
+        for (let item of userRoleColumnValues1){
+            gatheredValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+
+        await this.lblUserRoleColumnHeader.click();
+        let userRoleColumnValues2 = await this.lblUserRoleColumnValues;
+        for (let item of userRoleColumnValues2){
+            sortedValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+        console.log(gatheredValues)
+        gatheredValues.sort(function (a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase()); //Sorting in case insensitive manner
+        }).reverse();
+        console.log(gatheredValues)
+        return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
+    }
+    async sortEmployeeNameInDescendingOrder(){
+        let gatheredValues = [];
+        let sortedValues = []; //This will contain already sorted values by front end
+
+        let userRoleColumnValues1 = await this.lblEmployeeNameColumnValues;
+        for (let item of userRoleColumnValues1){
+            gatheredValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+
+        await this.lblEmployeeNameColumnHeader.click();
+        let userRoleColumnValues2 = await this.lblEmployeeNameColumnValues;
+        for (let item of userRoleColumnValues2){
+            sortedValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+        console.log(gatheredValues)
+        gatheredValues.sort(function (a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase()); //Sorting in case insensitive manner
+        }).reverse();
+        console.log(gatheredValues)
+        return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
+    }
+    async sortStatusInDescendingOrder(){
+        let gatheredValues = [];
+        let sortedValues = []; //This will contain already sorted values by front end
+
+        let userRoleColumnValues1 = await this.lblStatusColumnValues;
+        for (let item of userRoleColumnValues1){
+            gatheredValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+
+        await this.lblStatusColumnHeader.click();
+        let userRoleColumnValues2 = await this.lblStatusColumnValues;
+        for (let item of userRoleColumnValues2){
+            sortedValues.push(await item.getText());
+            // console.log(await item.getText());
+        }
+        console.log(gatheredValues)
+        gatheredValues.sort(function (a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase()); //Sorting in case insensitive manner
+        }).reverse();
+        console.log(gatheredValues)
+        return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
+    }
 
 }
 
