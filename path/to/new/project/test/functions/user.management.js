@@ -14,6 +14,24 @@ class UserManagement {
     async sortStatusInAscendingOrder(){
         return await userManagementPage.sortStatusInAscendingOrder();
     }
+    async sortUsernameInDescendingOrder(){
+        return await userManagementPage.sortUsernameInDescendingOrder();
+    }
+    async sortUserRoleInDescendingOrder(){
+        return await userManagementPage.sortUserRoleInDescendingOrder();
+    }
+    async sortEmployeeNameInDescendingOrder(){
+        return await userManagementPage.sortEmployeeNameInDescendingOrder();
+    }
+    async sortStatusInDescendingOrder(){
+        return await userManagementPage.sortStatusInDescendingOrder();
+    }
+    async refreshPage(){
+        await userManagementPage.refreshPage();
+    }
+
+
+
 
 
 }
