@@ -200,6 +200,7 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     it('Verify the Admin can sort table data in descending order', async () =>{
         await LandingPage.lnkAdmin.click();
         await browser.pause(5000);
+        expect(await UserManagement.sortUsernameInDescendingOrder()).toBeTruthy();
     });
 
 });
