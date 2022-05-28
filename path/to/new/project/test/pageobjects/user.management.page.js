@@ -279,6 +279,10 @@ class UserManagementPage extends Page{
         return (JSON.stringify(gatheredValues)===JSON.stringify(sortedValues));
     }
 
+    async refreshPage(){
+        await browser.refresh();
+    }
+
 }
 
 
