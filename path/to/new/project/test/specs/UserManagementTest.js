@@ -196,11 +196,16 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
         expect(await UserManagement.sortUserRoleInAscendingOrder()).toBeTruthy();
         expect(await UserManagement.sortEmployeeNameInAscendingOrder()).toBeTruthy();
         expect(await UserManagement.sortStatusInAscendingOrder()).toBeTruthy();
+        await UserManagement.refreshPage();
     });
     it('Verify the Admin can sort table data in descending order', async () =>{
         await LandingPage.lnkAdmin.click();
         await browser.pause(5000);
         expect(await UserManagement.sortUsernameInDescendingOrder()).toBeTruthy();
+        expect(await UserManagement.sortUserRoleInDescendingOrder()).toBeTruthy();
+        expect(await UserManagement.sortEmployeeNameInDescendingOrder()).toBeTruthy();
+        expect(await UserManagement.sortStatusInDescendingOrder()).toBeTruthy();
+        await UserManagement.refreshPage();
     });
 
 });

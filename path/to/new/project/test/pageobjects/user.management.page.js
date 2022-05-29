@@ -197,6 +197,7 @@ class UserManagementPage extends Page{
         }
 
         await this.lblUsernameColumnHeader.click();
+        await this.lblUsernameColumnHeader.click(); //Clicking twice to sort in descending order
         let userNameColumnValues2 = await this.lblUsernameColumnValues;
         for (let item of userNameColumnValues2){
             sortedValues.push(await item.getText());
@@ -220,6 +221,7 @@ class UserManagementPage extends Page{
         }
 
         await this.lblUserRoleColumnHeader.click();
+        await this.lblUserRoleColumnHeader.click();//Clicking twice to sort in descending order
         let userRoleColumnValues2 = await this.lblUserRoleColumnValues;
         for (let item of userRoleColumnValues2){
             sortedValues.push(await item.getText());
@@ -243,6 +245,7 @@ class UserManagementPage extends Page{
         }
 
         await this.lblEmployeeNameColumnHeader.click();
+        await this.lblEmployeeNameColumnHeader.click();//Clicking twice to sort in descending order
         let userRoleColumnValues2 = await this.lblEmployeeNameColumnValues;
         for (let item of userRoleColumnValues2){
             sortedValues.push(await item.getText());
@@ -266,6 +269,7 @@ class UserManagementPage extends Page{
         }
 
         await this.lblStatusColumnHeader.click();
+        await this.lblStatusColumnHeader.click();//Clicking twice to sort in descending order
         let userRoleColumnValues2 = await this.lblStatusColumnValues;
         for (let item of userRoleColumnValues2){
             sortedValues.push(await item.getText());
