@@ -3,6 +3,7 @@ const LandingPage = require('../pageobjects/landing.page');
 const UserManagement = require('../functions/user.management')
 const UserManagementAddUser = require('../pageobjects/user.management.add.user.page');
 const UserManagementEditUser = require('../pageobjects/user.management.edit.user.page')
+const Landing = require('../functions/Landing')
 
 describe('HRM Demo application - Verify User Management Screen', () => {//Scenario name comes here
     it('Verify the admin can navigate to User Management page', async () => {
@@ -189,23 +190,27 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     expect(await UserManagement.lblFirstRowSearchData).toHaveTextContaining('Enabled');
     //     // await browser.pause(5000);
     // });
-    it('Verify the Admin can sort table data in ascending order', async ()=>{
-        await LandingPage.lnkAdmin.click();
-        await browser.pause(5000);
-        expect(await UserManagement.sortUsernameInAscendingOrder()).toBeTruthy();
-        expect(await UserManagement.sortUserRoleInAscendingOrder()).toBeTruthy();
-        expect(await UserManagement.sortEmployeeNameInAscendingOrder()).toBeTruthy();
-        expect(await UserManagement.sortStatusInAscendingOrder()).toBeTruthy();
-        await UserManagement.refreshPage();
-    });
-    it('Verify the Admin can sort table data in descending order', async () =>{
-        await LandingPage.lnkAdmin.click();
-        await browser.pause(5000);
-        expect(await UserManagement.sortUsernameInDescendingOrder()).toBeTruthy();
-        expect(await UserManagement.sortUserRoleInDescendingOrder()).toBeTruthy();
-        expect(await UserManagement.sortEmployeeNameInDescendingOrder()).toBeTruthy();
-        expect(await UserManagement.sortStatusInDescendingOrder()).toBeTruthy();
-        await UserManagement.refreshPage();
-    });
+    // it('Verify the Admin can sort table data in ascending order', async ()=>{
+    //     await LandingPage.lnkAdmin.click();
+    //     await browser.pause(5000);
+    //     expect(await UserManagement.sortUsernameInAscendingOrder()).toBeTruthy();
+    //     expect(await UserManagement.sortUserRoleInAscendingOrder()).toBeTruthy();
+    //     expect(await UserManagement.sortEmployeeNameInAscendingOrder()).toBeTruthy();
+    //     expect(await UserManagement.sortStatusInAscendingOrder()).toBeTruthy();
+    //     await UserManagement.refreshPage();
+    // });
+    // it('Verify the Admin can sort table data in descending order', async () =>{
+    //     await LandingPage.lnkAdmin.click();
+    //     await browser.pause(5000);
+    //     expect(await UserManagement.sortUsernameInDescendingOrder()).toBeTruthy();
+    //     expect(await UserManagement.sortUserRoleInDescendingOrder()).toBeTruthy();
+    //     expect(await UserManagement.sortEmployeeNameInDescendingOrder()).toBeTruthy();
+    //     expect(await UserManagement.sortStatusInDescendingOrder()).toBeTruthy();
+    //     await UserManagement.refreshPage();
+    // });
+    it('Verify the Admin can navigate to Job Titles page', async()=>{
+        await Landing.navigateToJobs()
+    })
 
+    //Add navigation to job titles
 });
