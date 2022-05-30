@@ -17,6 +17,14 @@ class LandingPage extends Page {
         return $("//a[@id='menu_admin_viewAdminModule']");
     }
 
+    async navigateToJobs(){
+        await this.mainNavigationBar.moveTo();
+        await this.btnAdminNavigationPanel.moveTo();
+        await this.drpDwnJobNavigationPanel.moveTo();
+        await this.lnkJobTitlesNavigationPanel.click();
+        await browser.pause(5000);
+    }
+
 }
 
 module.exports = new LandingPage();
