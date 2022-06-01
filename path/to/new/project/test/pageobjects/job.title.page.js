@@ -11,4 +11,17 @@ class JobTitlePage extends Page{
     get btnDelete(){
         return $('#btnDelete');
     }
+
+    async isJobTitleTopicDisplaying(){
+        return this.lblJobTitle.isDisplayed()
+    }
+    async isAddButtonDisplaying(){
+        return this.btnAdd.isDisplayed()
+    }
+    async isDeleteButtonDisplaying(){
+        return this.btnDelete.isDisplayed()
+    }
+
 }
+
+module.exports = new JobTitlePage()
