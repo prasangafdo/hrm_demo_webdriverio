@@ -208,9 +208,4 @@ describe('HRM Demo application - Verify User Management Screen', () => {//Scenar
     //     expect(await UserManagement.sortStatusInDescendingOrder()).toBeTruthy();
     //     await UserManagement.refreshPage();
     // });
-    it('Verify the Admin can navigate to Job Titles page', async()=>{
-        await Landing.navigateToJobs()
-    })
-
-    //Add navigation to job titles
 });
