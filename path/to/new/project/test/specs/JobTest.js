@@ -1,4 +1,5 @@
 const LoginPage = require('../pageobjects/login.page')
+const Landing = require('../functions/Landing')
 const Job = require('../functions/Job')
 
 
