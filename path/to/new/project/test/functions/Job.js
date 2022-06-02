@@ -12,3 +12,4 @@ class Job {
         return JobTitles.btnDelete.isDisplayed()
     }
 }
+module.exports = new Job()

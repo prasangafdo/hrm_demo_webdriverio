@@ -10,8 +10,8 @@ describe('Verify the functionality of the Job screen', ()=>{
             await LoginPage.login('Admin', 'admin123');
         }
         await Landing.navigateToJobs();
-        //Add navigation to job titles
-
-
+        expect(Job.isJobTitleTopicDisplaying()).toBeTruthy();
+        expect(Job.isAddButtonDisplaying()).toBeTruthy();
+        expect(Job.isDeleteButtonDisplaying()).toBeTruthy();
     })
 })

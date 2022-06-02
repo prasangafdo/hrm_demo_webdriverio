@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1654156317444' stop='1654156338089'>
+    <name>Verify the functionality of the Job screen</name>
+    <title>Verify the functionality of the Job screen</title>
+    <test-cases>
+        <test-case start='1654156317444' status='passed' stop='1654156338085'>
+            <name>Verify the UI components of the Job screen</name>
+            <title>Verify the UI components of the Job screen</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
