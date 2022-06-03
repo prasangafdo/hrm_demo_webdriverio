@@ -2,6 +2,19 @@ const LandingPage = require('../pageobjects/landing.page');
 const JobTitles = require('../pageobjects/job.title.page');
 
 class Job {
+    //====Element locators
+    get lblJobTitle(){
+        console.log('--------------------loggg')
+        return JobTitles.lblJobTitle;
+    }
+    get btnAdd(){
+        return JobTitles.btnAdd;
+    }
+    get btnDelete(){
+        return JobTitles.btnDelete
+    }
+    //Element locators ends
+
     async isJobTitleTopicDisplaying(){
         return JobTitles.lblJobTitle.isDisplayed()
     }
