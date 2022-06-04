@@ -3,13 +3,20 @@ const JobTitles = require('../pageobjects/job.title.page');
 
 class Job {
     async isJobTitleTopicDisplaying(){
-        return JobTitles.lblJobTitle.isDisplayed()
+        return JobTitles.isJobTitleTopicDisplaying()
     }
     async isAddButtonDisplaying(){
-        return JobTitles.btnAdd.isDisplayed()
+        return JobTitles.isAddButtonDisplaying()
     }
     async isDeleteButtonDisplaying(){
-        return JobTitles.btnDelete.isDisplayed()
+        return JobTitles.isDeleteButtonDisplaying()
     }
+    async clickOnAddJobTitleButton(){
+        return JobTitles.clickOnAddJobTitleButton()
+    }
+    async clickOnDeleteJobTitleButton(){
+        return JobTitles.clickOnDeleteJobTitleButton()
+    }
+
 }
 module.exports = new Job()
