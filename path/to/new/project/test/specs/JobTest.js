@@ -20,7 +20,7 @@ describe('Verify the functionality of the Job screen', ()=>{
             await LoginPage.login('Admin', 'admin123');
         }
         await Landing.navigateToJobs();
-        await Job.btnAdd.click();
+        await Job.clickOnAddJobTitleButton();
         await browser.pause(40000);
     })
     //Add, edit, delete job titles
