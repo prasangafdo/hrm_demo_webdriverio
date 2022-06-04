@@ -21,7 +21,7 @@ describe('Verify the functionality of the Job screen', ()=>{
         }
         await Landing.navigateToJobs();
         await Job.btnAdd.click();
-        await browser.pause(40000)
+        await browser.pause(40000);
     })
     //Add, edit, delete job titles
 })
