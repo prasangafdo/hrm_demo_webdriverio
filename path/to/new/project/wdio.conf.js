@@ -23,7 +23,7 @@ exports.config = {
     specs: [
         // './test/specs/**/*.js'
         // './test/specs/LoginTest.js',
-        './test/specs/UserManagementTest.js',
+        // './test/specs/UserManagementTest.js',
         './test/specs/JobTest.js'
         // './test/specs/BrowserTest.js'
     ],

@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1654501130515' stop='1654501147572'>
+    <name>Verify the functionality of the Job screen</name>
+    <title>Verify the functionality of the Job screen</title>
+    <test-cases>
+        <test-case start='1654501130515' status='broken' stop='1654501147571'>
+            <name>Verify the Admin can add a new job title</name>
+            <title>Verify the Admin can add a new job title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>this.btnAdd is not a function</message>
+                <stack-trace>TypeError: this.btnAdd is not a function
+                    at JobTitlePage.clickOnAddJobTitleButton (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\pageobjects\job.title.page.js:25:21)
+                    at Job.clickOnAddJobTitleButton (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\functions\Job.js:15:26)
+                    at Context.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\specs\JobTest.js:23:19)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

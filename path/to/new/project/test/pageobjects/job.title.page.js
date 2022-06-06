@@ -22,10 +22,10 @@ class JobTitlePage extends Page{
         return this.btnDelete.isDisplayed()
     }
     async clickOnAddJobTitleButton(){
-        return this.btnAdd()
+        return this.btnAdd.click()
     }
     async clickOnDeleteJobTitleButton(){
-        return this.btnDelete()
+        return this.btnDelete.click()
     }
 
 
