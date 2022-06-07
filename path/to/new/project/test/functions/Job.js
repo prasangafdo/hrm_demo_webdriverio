@@ -1,5 +1,6 @@
 const LandingPage = require('../pageobjects/landing.page');
 const JobTitles = require('../pageobjects/job.title.page');
+const AddJobTitles = require('../pageobjects/job.title.add.page');
 
 class Job {
     async isJobTitleTopicDisplaying(){
@@ -16,6 +17,10 @@ class Job {
     }
     async clickOnDeleteJobTitleButton(){
         return JobTitles.clickOnDeleteJobTitleButton()
+    }
+
+    async addJobTitle(title, description, note){
+        await AddJobTitles.addJobTitle(title, description, note)
     }
 
 }
