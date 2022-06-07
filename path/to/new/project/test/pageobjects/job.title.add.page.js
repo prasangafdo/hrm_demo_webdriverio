@@ -14,6 +14,19 @@ class JobTitleAddPage extends Page{
     get txtJobTitleNote(){
         return ('#jobTitle_note')
     }
+    get fleJobSpecification(){
+        return ('#jobTitle_jobSpec')
+    }
+    get btnSave(){
+        return ('#btnSave')
+    }
+
+    async addJobTitle(title, description, note){
+        await this.txtJobTitle.setValue(title)
+        await this.txtJobDescription.setValue(description)
+        await this.txtJobTitleNote.setValue(note)
+        await this.btnSave.click()
+    }
 
 }
 
