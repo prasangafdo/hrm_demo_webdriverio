@@ -25,6 +25,7 @@ class JobTitleAddPage extends Page{
         await this.txtJobTitle.setValue(title)
         await this.txtJobDescription.setValue(description)
         await this.txtJobTitleNote.setValue(note)
+        await this.fleJobSpecification.setValue("C:\\Users\\Prasanga Fernando\\Desktop")
         await this.btnSave.click()
     }
 
