@@ -18,9 +18,11 @@ class Job {
     async clickOnDeleteJobTitleButton(){
         return JobTitles.clickOnDeleteJobTitleButton()
     }
-
-    async addJobTitle(title, description, note){
-        await AddJobTitles.addJobTitle(title, description, note)
+    async addJobTitleWithoutJpbSpecification(title, description, note){
+        await AddJobTitles.addJobTitleWithoutJpbSpecification(title, description, note)
+    }
+    async getSaveSuccessMessage(){
+        return AddJobTitles.lblSaveSuccessMessage.getText()
     }
 
 }
