@@ -2,6 +2,7 @@ const Page = require('../pageobjects/page')
 
 class JobTitlePage extends Page{
 
+
     get lblJobTitle(){
         return $("//h1[text()='Job Titles']")
     }
@@ -10,6 +11,13 @@ class JobTitlePage extends Page{
     }
     get btnDelete(){
         return $('#btnDelete');
+    }
+    get chkJobTitle(){
+        return
+    }
+
+    set jobTitleName(jobTitle){
+        ssslblJobTitle
     }
 
     async isJobTitleTopicDisplaying(){
