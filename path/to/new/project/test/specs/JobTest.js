@@ -26,5 +26,16 @@ describe('Verify the functionality of the Job screen', ()=>{
         expect(await Job.getSaveSuccessMessage()).toHaveText('Successfully Saved')
         await browser.pause(2000)
     })
+    it('Verify the Admin can search a job title', async ()=>{
+        await LoginPage.open();
+        if(await LoginPage.inputUsername.isDisplayed()){ //Handling the login to check whether the user has already logged into the system or not
+            await LoginPage.login('Admin', 'admin123');
+        }
+        await Landing.navigateToJobs();
+
+    })
+    // it('Verify the Admin can edit a job title', async ()=>{
+    //
+    // }
     //Add, edit, delete job titles
 })
