@@ -18,8 +18,8 @@ class Job {
     async clickOnDeleteJobTitleButton(){
         return JobTitles.clickOnDeleteJobTitleButton()
     }
-    async addJobTitleWithoutJpbSpecification(title, description, note){
-        await AddJobTitles.addJobTitleWithoutJpbSpecification(title, description, note)
+    async addJobTitleWithoutJobSpecification(title, description, note){
+        await AddJobTitles.addJobTitleWithoutJobSpecification(title, description, note)
     }
     async getSaveSuccessMessage(){
         return AddJobTitles.lblSaveSuccessMessage.getText()

@@ -24,7 +24,7 @@ class JobTitleAddPage extends Page{
         return $("//div[@class='message success fadable']");
     }
 
-    async addJobTitleWithoutJpbSpecification(title, description, note){
+    async addJobTitleWithoutJobSpecification(title, description, note){
         await this.txtJobTitle.setValue(title)
         await this.txtJobDescription.setValue(description)
         await this.txtJobTitleNote.setValue(note)

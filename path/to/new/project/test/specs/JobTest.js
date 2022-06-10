@@ -22,18 +22,11 @@ describe('Verify the functionality of the Job screen', ()=>{
         await Landing.navigateToJobs();
         await Job.clickOnAddJobTitleButton();
         await browser.pause(4000);
-        await Job.addJobTitleWithoutJpbSpecification('test123', 'test111', 'test222')
+        await Job.addJobTitleWithoutJobSpecification('test123', 'test111', 'test222')
         expect(await Job.getSaveSuccessMessage()).toHaveText('Successfully Saved')
         await browser.pause(2000)
     })
-    // it('Verify the Admin can search a job title', async ()=>{
-    //     await LoginPage.open();
-    //     if(await LoginPage.inputUsername.isDisplayed()){ //Handling the login to check whether the user has already logged into the system or not
-    //         await LoginPage.login('Admin', 'admin123');
-    //     }
-    //     await Landing.navigateToJobs();
-    //
-    // })
+
     it('Verify the Admin can edit a job title', async ()=>{
         await LoginPage.open();
             if(await LoginPage.inputUsername.isDisplayed()){ //Handling the login to check whether the user has already logged into the system or not
