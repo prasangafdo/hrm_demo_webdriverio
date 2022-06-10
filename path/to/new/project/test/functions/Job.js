@@ -21,6 +21,9 @@ class Job {
     async addJobTitleWithoutJobSpecification(title, description, note){
         await AddJobTitles.addJobTitleWithoutJobSpecification(title, description, note)
     }
+    async addJobTitleWithJobSpecification(title, description, note){
+        await AddJobTitles.addJobTitleWithJobSpecification(title, description, note)
+    }
     async getSaveSuccessMessage(){
         return AddJobTitles.lblSaveSuccessMessage.getText()
     }
