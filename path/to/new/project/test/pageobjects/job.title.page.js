@@ -13,11 +13,11 @@ class JobTitlePage extends Page{
         return $('#btnDelete');
     }
     get chkJobTitle(){
-        return
+        return $('aaaa')
     }
 
     set jobTitleName(jobTitle){
-        ssslblJobTitle
+        this.chkJobTitle = jobTitle;
     }
 
     async isJobTitleTopicDisplaying(){
