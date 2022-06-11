@@ -1,6 +1,6 @@
 const Page = require('../pageobjects/page')
 
-class JobTitlePage extends Page{
+class JobTitlePage {//extends Page{
 
 
     get lblJobTitle(){
@@ -15,10 +15,25 @@ class JobTitlePage extends Page{
     get chkJobTitle(){
         return $('aaaa')
     }
-
-    set jobTitleName(jobTitle){
-        this.chkJobTitle = jobTitle;
+    constructor() {
+        this.variable = 1;
     }
+    someOtherFunction() {
+        console.log(this.variable + 1); // 2
+    }
+
+
+    async const student = {
+
+        // data property
+        firstName: 'Monica',
+
+        // accessor property(getter)
+        get getName() {
+            return this.firstName;
+        }
+    };
+
 
     async isJobTitleTopicDisplaying(){
         return this.lblJobTitle.isDisplayed()
@@ -38,5 +53,6 @@ class JobTitlePage extends Page{
 
 
 }
+
 
 module.exports = new JobTitlePage()
