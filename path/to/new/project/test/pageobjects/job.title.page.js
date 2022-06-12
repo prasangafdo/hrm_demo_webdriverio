@@ -12,27 +12,22 @@ class JobTitlePage {//extends Page{
     get btnDelete(){
         return $('#btnDelete');
     }
-    get chkJobTitle(){
-        return $('aaaa')
-    }
+    // get chkJobTitle(){
+    //     return $('aaaa')
+    // }
     constructor() {
-        this.variable = 1;
+        // this.chkJobTitle = $('test')
+        this.chkJobTitle= 'aaa'
     }
-    someOtherFunction() {
-        console.log(this.variable + 1); // 2
+    setJobTitle(keyword) {
+        // this.chkJobTitle = $("//a[text()='",keyword,"']")
+        this.chkJobTitle = keyword
+        console.log('=======>',this.chkJobTitle);
+    }
+    getJobTitle(){
+        return this.chkJobTitle
     }
 
-
-    async const student = {
-
-        // data property
-        firstName: 'Monica',
-
-        // accessor property(getter)
-        get getName() {
-            return this.firstName;
-        }
-    };
 
 
     async isJobTitleTopicDisplaying(){
