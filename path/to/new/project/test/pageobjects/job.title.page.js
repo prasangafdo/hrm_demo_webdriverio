@@ -15,35 +15,43 @@ class JobTitlePage {//extends Page{
     // get chkJobTitle(){
     //     return $('aaaa')
     // }
+
     constructor() {
         // this.chkJobTitle = $('test')
-        this.chkJobTitle= 'aaa'
-    }
-    setJobTitle(keyword) {
-        // this.chkJobTitle = $("//a[text()='",keyword,"']")
-        this.chkJobTitle = keyword
-        console.log('=======>',this.chkJobTitle);
-    }
-    getJobTitle(){
-        return this.chkJobTitle
-    }
+        const lnkJobTitle={
+            title: 'aaa',
+            async asetJobTitle(keyword) {
+                // this.chkJobTitle = $("//a[text()='",keyword,"']")
+                // this.chkJobTitle = keyword
+                this.lnkJobTitle = $("//a[text()='"+keyword+"']")
+                console.log('=======>',await this.lnkJobTitle);
+            },
+            async agetJobTitle(){
+                return await this.lnkJobTitle
+            }
+        }
 
+    }
 
 
     async isJobTitleTopicDisplaying(){
-        return this.lblJobTitle.isDisplayed()
+        return await this.lblJobTitle.isDisplayed()
     }
     async isAddButtonDisplaying(){
-        return this.btnAdd.isDisplayed()
+        return await this.btnAdd.isDisplayed()
     }
     async isDeleteButtonDisplaying(){
-        return this.btnDelete.isDisplayed()
+        return await this.btnDelete.isDisplayed()
     }
     async clickOnAddJobTitleButton(){
-        return this.btnAdd.click()
+        return await this.btnAdd.click()
     }
     async clickOnDeleteJobTitleButton(){
-        return this.btnDelete.click()
+        return await this.btnDelete.click()
+    }
+    async clickOnJobTitle(){
+        let title = await this.getJobTitle()
+        await title.click()
     }
 
 

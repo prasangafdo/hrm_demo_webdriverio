@@ -41,14 +41,14 @@ describe('Verify the functionality of the Job screen', ()=>{
     // })
 
     it('Verify the Admin can edit a job title', async ()=>{
-        // await LoginPage.open();
-        //     if(await LoginPage.inputUsername.isDisplayed()){ //Handling the login to check whether the user has already logged into the system or not
-        //         await LoginPage.login('Admin', 'admin123');
-        //     }
-        //     await Landing.navigateToJobs();
-        JobT.setJobTitle('amd')
-            console.log(JobT.getJobTitle())
-
+        await LoginPage.open();
+            if(await LoginPage.inputUsername.isDisplayed()){ //Handling the login to check whether the user has already logged into the system or not
+                await LoginPage.login('Admin', 'admin123');
+            }
+            await Landing.navigateToJobs();
+        await Job.setJobTitle('System')
+        // console.log("=====.",await Job.getJobTitle())
+        await Job.clickOnJobTitle()
 
 
     })

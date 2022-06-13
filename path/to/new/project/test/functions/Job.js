@@ -27,6 +27,15 @@ class Job {
     async getSaveSuccessMessage(){
         return AddJobTitles.lblSaveSuccessMessage.getText()
     }
+    async setJobTitle(keyword){
+         await JobTitles().asetJobTitle(keyword)
+    }
+    async getJobTitle(){
+        return await JobTitles().getJobTitle()
+    }
+    async clickOnJobTitle(){
+        await JobTitles.clickOnJobTitle()
+    }
 
 }
 module.exports = new Job()

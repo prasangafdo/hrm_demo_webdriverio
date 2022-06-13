@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655137725934' stop='1655137752977'>
+    <name>Verify the functionality of the Job screen</name>
+    <title>Verify the functionality of the Job screen</title>
+    <test-cases>
+        <test-case start='1655137725935' status='broken' stop='1655137752976'>
+            <name>Verify the Admin can edit a job title</name>
+            <title>Verify the Admin can edit a job title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "//a[text()='undefined']" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//a[text()='undefined']" because element wasn't found
+                    at implicitWait (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async JobTitlePage.clickOnJobTitle (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\pageobjects\job.title.page.js:48:9)
+                    at async Job.clickOnJobTitle (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\functions\Job.js:37:9)
+                    at async Context.&lt;anonymous> (C:\Users\Prasanga Fernando\WebstormProjects\hrm_demo_webdriverio\path\to\new\project\test\specs\JobTest.js:51:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
