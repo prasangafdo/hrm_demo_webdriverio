@@ -28,7 +28,7 @@ class Job {
         return AddJobTitles.lblSaveSuccessMessage.getText()
     }
     async setJobTitle(keyword){
-        await JobTitles.setJobTitle()
+        await JobTitles.setJobTitle(keyword)
     }
     async getJobTitle(){
         return JobTitles.getJobTitle()

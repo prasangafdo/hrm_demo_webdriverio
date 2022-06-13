@@ -24,21 +24,18 @@ class JobTitlePage {//extends Page{
         // this.chkJobTitle = keyword
         let element = $("//a[text()='"+keyword+"']")
         this.lnkJobTitle = await element
-        // console.log('=======>',await this.lnkJobTitle);
+        // console.log('=======ss>',element);
     }
-    async getJobTitle(){
-        let val
+    getJobTitle(){
         Promise.resolve(this.lnkJobTitle).then(
             (value) =>
                {
                    let val = value
-                   console.log('ccccccccc=======>',val)
+                   // console.log('ccccccccc=======>',val)
+                   this.lnkJobTitle = $("//a[text()='"+val+"']")
                    return val
                }
-
-
         );
-        return val
     }
 
     async isJobTitleTopicDisplaying(){
@@ -57,8 +54,9 @@ class JobTitlePage {//extends Page{
         return await this.btnDelete.click()
     }
     async clickOnJobTitle(){
-        let title = await this.getJobTitle()
-        title.click()
+        this.getJobTitle()
+        console.log('11111111111111111111111',this.lnkJobTitle)
+        this.lnkJobTitle.click()
     }
 
 

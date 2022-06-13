@@ -46,9 +46,10 @@ describe('Verify the functionality of the Job screen', ()=>{
                 await LoginPage.login('Admin', 'admin123');
             }
             await Landing.navigateToJobs();
-        await Job.setJobTitle('System')
+        await Job.setJobTitle('Engineer')
         // console.log("=====.",await Job.getJobTitle())
         await Job.clickOnJobTitle()
+        await browser.pause(12000)
 
 
     })
