@@ -15,24 +15,31 @@ class JobTitlePage {//extends Page{
     // get chkJobTitle(){
     //     return $('aaaa')
     // }
-
-    constructor() {
-        // this.chkJobTitle = $('test')
-        const lnkJobTitle={
-            title: 'aaa',
-            async asetJobTitle(keyword) {
-                // this.chkJobTitle = $("//a[text()='",keyword,"']")
-                // this.chkJobTitle = keyword
-                this.lnkJobTitle = $("//a[text()='"+keyword+"']")
-                console.log('=======>',await this.lnkJobTitle);
-            },
-            async agetJobTitle(){
-                return await this.lnkJobTitle
-            }
-        }
-
+    // constructor() {
+    //     // this.chkJobTitle = $('test')
+    //     this.lnkJobTitle = 'aaa'
+    // }
+    async setJobTitle(keyword) {
+        // this.chkJobTitle = $("//a[text()='",keyword,"']")
+        // this.chkJobTitle = keyword
+        let element = $("//a[text()='"+keyword+"']")
+        this.lnkJobTitle = await element
+        // console.log('=======>',await this.lnkJobTitle);
     }
+    async getJobTitle(){
+        let val
+        Promise.resolve(this.lnkJobTitle).then(
+            (value) =>
+               {
+                   let val = value
+                   console.log('ccccccccc=======>',val)
+                   return val
+               }
 
+
+        );
+        return val
+    }
 
     async isJobTitleTopicDisplaying(){
         return await this.lblJobTitle.isDisplayed()
@@ -51,7 +58,7 @@ class JobTitlePage {//extends Page{
     }
     async clickOnJobTitle(){
         let title = await this.getJobTitle()
-        await title.click()
+        title.click()
     }
 
 

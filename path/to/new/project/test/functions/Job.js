@@ -28,10 +28,10 @@ class Job {
         return AddJobTitles.lblSaveSuccessMessage.getText()
     }
     async setJobTitle(keyword){
-         await JobTitles().asetJobTitle(keyword)
+        await JobTitles.setJobTitle()
     }
     async getJobTitle(){
-        return await JobTitles().getJobTitle()
+        return JobTitles.getJobTitle()
     }
     async clickOnJobTitle(){
         await JobTitles.clickOnJobTitle()
