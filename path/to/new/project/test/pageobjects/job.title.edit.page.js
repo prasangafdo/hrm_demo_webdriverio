@@ -24,6 +24,10 @@ class JobTitleEditPage extends Page{
         return $("//div[@class='message success fadable']");
     }
 
+    async clickOnEditJobTitleButton(){
+        await this.btnSave.click()
+    }
+
     async editJobTitleWithoutJobSpecification(title, description, note){
         await this.txtJobTitle.setValue(title)
         await this.txtJobDescription.setValue(description)

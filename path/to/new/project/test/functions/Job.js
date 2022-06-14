@@ -38,7 +38,9 @@ class Job {
         JobTitles.clickOnJobTitle()
     }
 
-
+    async clickOnEditJobTitleButton(){
+        await EditJobTitles.clickOnEditJobTitleButton()
+    }
     async editJobTitleWithoutJobSpecification(title, description, note){
         await EditJobTitles.editJobTitleWithoutJobSpecification(title, description, note)
     }

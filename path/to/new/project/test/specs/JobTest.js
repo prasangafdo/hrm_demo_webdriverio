@@ -47,10 +47,12 @@ describe('Verify the functionality of the Job screen', ()=>{
             }
             await Landing.navigateToJobs();
         await Job.setJobTitle('Engineer')
-        // console.log("=====.",await Job.getJobTitle())
         Job.clickOnJobTitle()
+        //Add a verification point to see if the user has navigated to the edit job titles page
+        await Job.clickOnEditJobTitleButton()
         await Job.editJobTitleWithoutJobSpecification('test123 updated', 'test description updated', 'test note upd')
         await browser.pause(12000)
+        //Add a verification point to check the save success message
     })
     // Add, edit, delete job titles
 })
