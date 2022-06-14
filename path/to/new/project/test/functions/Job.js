@@ -33,8 +33,8 @@ class Job {
     async getJobTitle(){
         return JobTitles.getJobTitle()
     }
-    async clickOnJobTitle(){
-        await JobTitles.clickOnJobTitle()
+    clickOnJobTitle(){
+        JobTitles.clickOnJobTitle()
     }
 
 }

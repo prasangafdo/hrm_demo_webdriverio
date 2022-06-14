@@ -22,21 +22,30 @@ class JobTitlePage {//extends Page{
     async setJobTitle(keyword) {
         // this.chkJobTitle = $("//a[text()='",keyword,"']")
         // this.chkJobTitle = keyword
-        let element = $("//a[text()='"+keyword+"']")
-        this.lnkJobTitle = await element
+        this.lnkJobTitle = $("//a[text()='"+keyword+"']")
+        // this.lnkJobTitle = await element
+            Promise.resolve(this.lnkJobTitle).then(
+                (value) =>
+                   {
+                       let val = value
+                       // console.log('ccccccccc=======>',val)
+                       this.lnkJobTitle = $("//a[text()='"+val+"']")
+                       return val
+                   }
+            );
         // console.log('=======ss>',element);
     }
-    getJobTitle(){
-        Promise.resolve(this.lnkJobTitle).then(
-            (value) =>
-               {
-                   let val = value
-                   // console.log('ccccccccc=======>',val)
-                   this.lnkJobTitle = $("//a[text()='"+val+"']")
-                   return val
-               }
-        );
-    }
+    // getJobTitle(){
+    //     Promise.resolve(this.lnkJobTitle).then(
+    //         (value) =>
+    //            {
+    //                let val = value
+    //                // console.log('ccccccccc=======>',val)
+    //                this.lnkJobTitle = $("//a[text()='"+val+"']")
+    //                return val
+    //            }
+    //     );
+    // }
 
     async isJobTitleTopicDisplaying(){
         return await this.lblJobTitle.isDisplayed()
@@ -53,8 +62,8 @@ class JobTitlePage {//extends Page{
     async clickOnDeleteJobTitleButton(){
         return await this.btnDelete.click()
     }
-    async clickOnJobTitle(){
-        this.getJobTitle()
+    clickOnJobTitle(){
+        // this.getJobTitle()
         console.log('11111111111111111111111',this.lnkJobTitle)
         this.lnkJobTitle.click()
     }
