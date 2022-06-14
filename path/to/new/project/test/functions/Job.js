@@ -1,6 +1,7 @@
 const LandingPage = require('../pageobjects/landing.page');
 const JobTitles = require('../pageobjects/job.title.page');
 const AddJobTitles = require('../pageobjects/job.title.add.page');
+const EditJobTitles = require('../pageobjects/job.title.edit.page');
 
 class Job {
     async isJobTitleTopicDisplaying(){
@@ -36,6 +37,12 @@ class Job {
     clickOnJobTitle(){
         JobTitles.clickOnJobTitle()
     }
+
+
+    async editJobTitleWithoutJobSpecification(title, description, note){
+        await EditJobTitles.editJobTitleWithoutJobSpecification(title, description, note)
+    }
+
 
 }
 module.exports = new Job()

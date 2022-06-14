@@ -49,9 +49,8 @@ describe('Verify the functionality of the Job screen', ()=>{
         await Job.setJobTitle('Engineer')
         // console.log("=====.",await Job.getJobTitle())
         Job.clickOnJobTitle()
+        await Job.editJobTitleWithoutJobSpecification('test123 updated', 'test description updated', 'test note upd')
         await browser.pause(12000)
-
-
     })
     // Add, edit, delete job titles
 })
