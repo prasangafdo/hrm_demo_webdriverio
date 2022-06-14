@@ -1,6 +1,6 @@
 const Page = require('../pageobjects/page')
 
-class JobTitleAddPage extends Page{
+class JobTitleEditPage extends Page{
 
     get lblEditJobTitlePage(){
         return $('#saveHobTitleHeading')
@@ -44,4 +44,4 @@ class JobTitleAddPage extends Page{
 
 }
 
-module.exports = new JobTitleAddPage()
+module.exports = new JobTitleEditPage()
